@@ -1,10 +1,10 @@
-package com.example.devsecops;
+package com.securedevops.secure;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DevSecOpsApplicationTests {
+class SecuredevopsApplicationTests {
 
     @Test
     void contextLoads() {

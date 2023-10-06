@@ -1,13 +1,13 @@
-package com.example.devsecops;
+package com.securedevops.secure;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DevSecOpsApplication {
+public class SecuredevopsApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DevSecOpsApplication.class, args);
+        SpringApplication.run(SecuredevopsApplication.class, args);
     }
 
 }

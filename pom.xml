@@ -5,16 +5,16 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.1</version>
+        <version>3.1.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.devsecops</groupId>
+    <groupId>com.securedevops</groupId>
     <artifactId>secure</artifactId>
-    <version>0.0.1</version>
-    <name>devSecOps</name>
-    <description>devSecOps</description>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>securedevops</name>
+    <description>securedevops</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
