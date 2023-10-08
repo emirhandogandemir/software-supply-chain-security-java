@@ -4,7 +4,7 @@ This repo contains articles, videos, and resources on software supply chain secu
 🔗 GitHub Links
 | Proje Adı    | Açıklama    | GitHub Linki                           |
 |--------------|-------------|----------------------------------------|
-| Proje 1      | Açıklama 1  | [GitHub Proje 1](https://github.com/)  |
+| Awesome software supply chain security      | A compilation of resources in the software supply chain security domain, with emphasis on open source | [awesome-software-supply-chain-security](https://github.com/bureado/awesome-software-supply-chain-security)  |
 | Proje 2      | Açıklama 2  | [GitHub Proje 2](https://github.com/)  |
 | Proje 3      | Açıklama 3  | [GitHub Proje 3](https://github.com/)  |
 | Proje 4      | Açıklama 4  | [GitHub Proje 4](https://github.com/)  |
