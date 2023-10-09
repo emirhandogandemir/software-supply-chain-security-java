@@ -45,8 +45,10 @@ This repo contains articles, videos, and resources on software supply chain secu
 
 `Installed with docker-compose.yaml`
 
-- ![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/8c161aff-5006-4da5-89e4-97a6fa40a789)
-- ![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/97c55c1f-f653-41b7-8c71-b6a8f9e29596)
-- ![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/be98c91b-87f9-415d-8dfa-aad58edebd02)
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/8c161aff-5006-4da5-89e4-97a6fa40a789)
+
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/97c55c1f-f653-41b7-8c71-b6a8f9e29596)
+
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/be98c91b-87f9-415d-8dfa-aad58edebd02)
 
 
