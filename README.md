@@ -26,7 +26,7 @@ This repo contains articles, videos, and resources on software supply chain secu
 |--------------|-------------|--------------|---------------|
 | [Supply Chain Security](https://www.aquasec.com/cloud-native-academy/supply-chain-security/supply-chain-security-mitigating-the-supply-chain-threat/)       | aqua     | None   | ⭐⭐⭐⭐⭐    |
 | [How to create SBOMs in Java with Maven and Gradle](https://medium.com/@snyksec/how-to-create-sboms-in-java-with-maven-and-gradle-2abb1269baa6)       | snyk     | 28.11.2022   | ⭐⭐⭐⭐       |
-| Yazı 3       | Yazar 3     | 03.01.2023   | ⭐⭐⭐⭐⭐     |
+| [SBOM Quick Start](https://help.sonatype.com/iqserver/quickstart-guides/software-bill-of-materials-%28sbom%29-quick-start?selectedPageVersions=6&selectedPageVersions=7)       | Sonatype     | None   | ⭐⭐⭐⭐     |
 | Yazı 4       | Yazar 4     | 04.01.2023   | ⭐⭐⭐           |
 
 --------------------------------------------------------------------------------
