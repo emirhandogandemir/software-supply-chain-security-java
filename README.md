@@ -26,7 +26,7 @@ This repo contains articles, videos, and resources on software supply chain secu
 |--------------|-------------|--------------|---------------|
 | [Supply Chain Security](https://www.aquasec.com/cloud-native-academy/supply-chain-security/supply-chain-security-mitigating-the-supply-chain-threat/)       | aqua     | None   | ⭐⭐⭐⭐⭐    |
 | [How to create SBOMs in Java with Maven and Gradle](https://medium.com/@snyksec/how-to-create-sboms-in-java-with-maven-and-gradle-2abb1269baa6)       | snyk     | 28.11.2022   | ⭐⭐⭐⭐       |
-| Yazı 3       | Yazar 3     | 03.01.2023   | ⭐⭐⭐⭐⭐     |
+| [SBOM Quick Start](https://help.sonatype.com/iqserver/quickstart-guides/software-bill-of-materials-%28sbom%29-quick-start?selectedPageVersions=6&selectedPageVersions=7)       | Sonatype     | None   | ⭐⭐⭐⭐     |
 | Yazı 4       | Yazar 4     | 04.01.2023   | ⭐⭐⭐           |
 
 --------------------------------------------------------------------------------
@@ -38,4 +38,13 @@ This repo contains articles, videos, and resources on software supply chain secu
 | Person 2       | Position 2          | [LinkedIn Profile 2](https://www.linkedin.com/) |
 | Person 3       | Position 3          | [LinkedIn Profile 3](https://www.linkedin.com/) |
 | Person 4       | Position 4          | [LinkedIn Profile 4](https://www.linkedin.com/) |
+
+
+--------------------------------------
+## Dependency Track 
+installed with docker-compose.yaml 
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/614d456e-d621-49d3-8f05-27ccb61da294)
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/97c55c1f-f653-41b7-8c71-b6a8f9e29596)
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/be98c91b-87f9-415d-8dfa-aad58edebd02)
+
 
