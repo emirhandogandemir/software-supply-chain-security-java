@@ -25,7 +25,7 @@ This repo contains articles, videos, and resources on software supply chain secu
 | Başlık       | Yazar       | Yayın Tarihi | Değerlendirme |
 |--------------|-------------|--------------|---------------|
 | [Supply Chain Security](https://www.aquasec.com/cloud-native-academy/supply-chain-security/supply-chain-security-mitigating-the-supply-chain-threat/)       | aqua     | None   | ⭐⭐⭐⭐⭐    |
-| Yazı 2       | Yazar 2     | 02.01.2023   | ⭐⭐⭐           |
+| [How to create SBOMs in Java with Maven and Gradle](https://medium.com/@snyksec/how-to-create-sboms-in-java-with-maven-and-gradle-2abb1269baa6)       | snyk     | 28.11.2022   | ⭐⭐⭐⭐       |
 | Yazı 3       | Yazar 3     | 03.01.2023   | ⭐⭐⭐⭐⭐     |
 | Yazı 4       | Yazar 4     | 04.01.2023   | ⭐⭐⭐           |
 
