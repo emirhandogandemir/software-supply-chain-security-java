@@ -39,3 +39,12 @@ This repo contains articles, videos, and resources on software supply chain secu
 | Person 3       | Position 3          | [LinkedIn Profile 3](https://www.linkedin.com/) |
 | Person 4       | Position 4          | [LinkedIn Profile 4](https://www.linkedin.com/) |
 
+
+--------------------------------------
+## Dependency Track 
+installed with docker-compose.yaml 
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/614d456e-d621-49d3-8f05-27ccb61da294)
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/97c55c1f-f653-41b7-8c71-b6a8f9e29596)
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/be98c91b-87f9-415d-8dfa-aad58edebd02)
+
+
