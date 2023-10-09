@@ -1,0 +1,135 @@
+{
+  "SPDXID" : "SPDXRef-DOCUMENT",
+  "spdxVersion" : "SPDX-2.3",
+  "creationInfo" : {
+    "created" : "2023-10-09T23:49:20Z",
+    "creators" : [ "Tool: spdx-maven-plugin" ],
+    "licenseListVersion" : "3.22"
+  },
+  "name" : "securedevops",
+  "dataLicense" : "CC0-1.0",
+  "documentDescribes" : [ "SPDXRef-3" ],
+  "documentNamespace" : "http://spdx.org/spdxpackages/com.securedevops_secure-0.0.1",
+  "packages" : [ {
+    "SPDXID" : "SPDXRef-3",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "f5279df828525ca79e23bcef8180f4ae2d220ea0"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "description" : "securedevops",
+    "downloadLocation" : "NOASSERTION",
+    "filesAnalyzed" : true,
+    "homepage" : "https://spring.io/projects/spring-boot/secure",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "licenseInfoFromFiles" : [ "NOASSERTION" ],
+    "name" : "securedevops",
+    "packageFileName" : "secure.jar",
+    "packageVerificationCode" : {
+      "packageVerificationCodeValue" : "590378d802da44d62075ab7bf4d07bb6b37104c8"
+    },
+    "primaryPackagePurpose" : "LIBRARY",
+    "hasFiles" : [ "SPDXRef-4", "SPDXRef-4", "SPDXRef-5", "SPDXRef-4", "SPDXRef-5", "SPDXRef-6", "SPDXRef-4", "SPDXRef-5", "SPDXRef-6", "SPDXRef-4", "SPDXRef-5", "SPDXRef-6", "SPDXRef-4", "SPDXRef-5", "SPDXRef-6" ],
+    "summary" : "securedevops",
+    "versionInfo" : "0.0.1"
+  }, {
+    "SPDXID" : "SPDXRef-0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Starter for building web, including RESTful, applications using Spring MVC. Uses Tomcat as the default embedded container",
+    "downloadLocation" : "NOASSERTION",
+    "filesAnalyzed" : false,
+    "homepage" : "https://spring.io/projects/spring-boot",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "spring-boot-starter-web",
+    "originator" : "Organization:VMware, Inc.",
+    "summary" : "Starter for building web, including RESTful, applications using Spring MVC. Uses Tomcat as the default embedded container",
+    "versionInfo" : "3.1.4"
+  }, {
+    "SPDXID" : "SPDXRef-1",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Spring Boot Developer Tools",
+    "downloadLocation" : "NOASSERTION",
+    "filesAnalyzed" : false,
+    "homepage" : "https://spring.io/projects/spring-boot",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "spring-boot-devtools",
+    "originator" : "Organization:VMware, Inc.",
+    "summary" : "Spring Boot Developer Tools",
+    "versionInfo" : "3.1.4"
+  }, {
+    "SPDXID" : "SPDXRef-2",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Starter for testing Spring Boot applications with libraries including JUnit Jupiter, Hamcrest and Mockito",
+    "downloadLocation" : "NOASSERTION",
+    "filesAnalyzed" : false,
+    "homepage" : "https://spring.io/projects/spring-boot",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "spring-boot-starter-test",
+    "originator" : "Organization:VMware, Inc.",
+    "summary" : "Starter for testing Spring Boot applications with libraries including JUnit Jupiter, Hamcrest and Mockito",
+    "versionInfo" : "3.1.4"
+  } ],
+  "files" : [ {
+    "SPDXID" : "SPDXRef-4",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "447d22e6436d3da649c13b3fb320600666ed1ca1"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/com/securedevops/secure/SecuredevopsApplication.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-5",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "af2f9ed293d157d61f44a603dcd5320163297f51"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/test/java/com/securedevops/secure/SecuredevopsApplicationTests.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-6",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "adc83b19e793491b1c6ea0fd8b46cd9f32e592fc"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/resources/application.properties",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  } ],
+  "relationships" : [ {
+    "spdxElementId" : "SPDXRef-3",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-0"
+  }, {
+    "spdxElementId" : "SPDXRef-3",
+    "relationshipType" : "OPTIONAL_COMPONENT_OF",
+    "relatedSpdxElement" : "SPDXRef-1"
+  }, {
+    "spdxElementId" : "SPDXRef-3",
+    "relationshipType" : "TEST_CASE_OF",
+    "relatedSpdxElement" : "SPDXRef-2"
+  }, {
+    "spdxElementId" : "SPDXRef-4",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef-3"
+  }, {
+    "spdxElementId" : "SPDXRef-5",
+    "relationshipType" : "TEST_CASE_OF",
+    "relatedSpdxElement" : "SPDXRef-3"
+  }, {
+    "spdxElementId" : "SPDXRef-6",
+    "relationshipType" : "CONTAINED_BY",
+    "relatedSpdxElement" : "SPDXRef-3"
+  } ]
+}
