@@ -12,5 +12,5 @@ If you haven't incorporated an SPDX Maven plugin or related dependency, consider
 ### 2. CycloneDX Format in Maven:
 Should you not have a CycloneDX Maven plugin or dependency, integrate it into your pom.xml.
 
-### Review results
+### 3. Review results
 After completing the Maven command execution, delve into the generated outputs. Our project's SBOM can be discerned in the xxx.json file. Scrutinize this document to ensure all Java components and dependencies within the SBOM correspond with those itemized in your pom.xml, and they remain up-to-date and secure.
