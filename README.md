@@ -53,7 +53,10 @@ This repo contains articles, videos, and resources on software supply chain secu
 
 ## Sonarqube
 
-We can use this command 
+- `docker pull sonarqube:communition`
+- `docker run -d --name sonarqube -p 9000:9000 -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -e SONAR_JAVA_OPTS="-Xmx4g -Xms512m -XX:+HeapDumpOnOutOfMemoryError" sonarqube:community`
+
+We can use below command for project SCA 
 
 `mvn clean package sonar:sonar -Dsonar.projecKey=secure-devOps -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_8d5781d430cef6f2ba2c08e691ef6b01bd0c8f28 -Dsonar.exclusions=**/*.java` this login token will be changing because of this sonarqube does not persistent
 
