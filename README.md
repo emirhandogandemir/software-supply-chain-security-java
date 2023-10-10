@@ -51,5 +51,18 @@ This repo contains articles, videos, and resources on software supply chain secu
 
 ![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/e387a3f0-d3cb-4117-b37c-a2a7e1594322)
 
+## Sonarqube
+
+We can use this command 
+
+`mvn clean package sonar:sonar -Dsonar.projecKey=secure-devOps -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_8d5781d430cef6f2ba2c08e691ef6b01bd0c8f28 -Dsonar.exclusions=**/*.java` this login token will be changing because of this sonarqube does not persistent
+
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/a2576664-7c8f-45f6-8cc7-734446a19e15)
+
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/11d5e107-f421-460c-a88d-912dadcead96)
+
+
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/de7bba07-253e-4eb1-8792-4b1b19762d19)
+
 
 
