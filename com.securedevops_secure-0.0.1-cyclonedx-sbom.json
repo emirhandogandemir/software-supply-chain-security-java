@@ -1,10 +1,10 @@
 {
   "bomFormat" : "CycloneDX",
   "specVersion" : "1.4",
-  "serialNumber" : "urn:uuid:529ac35a-88b5-4701-b3cd-c230ae6cc253",
+  "serialNumber" : "urn:uuid:b0572ec2-deb7-45fb-bfb2-090ea0c7a8d4",
   "version" : 1,
   "metadata" : {
-    "timestamp" : "2023-10-09T20:49:15Z",
+    "timestamp" : "2023-10-11T06:59:02Z",
     "tools" : [
       {
         "vendor" : "OWASP Foundation",
@@ -503,84 +503,6 @@
       ],
       "type" : "library",
       "bom-ref" : "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.20.0?type=jar"
-    },
-    {
-      "publisher" : "The Apache Software Foundation",
-      "group" : "org.apache.logging.log4j",
-      "name" : "log4j-api",
-      "version" : "2.20.0",
-      "description" : "The Apache Log4j API",
-      "scope" : "required",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "f9446464667f0139b839b5e9da37f5b9"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "1fe6082e660daf07c689a89c94dc0f49c26b44bb"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "2f43eea679ea66f14ca0f13fec2a8600ac124f5a5231dcb4df8393eddcb97550"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "851016b38421d21864bb3073089c44000f941bfbaa9dc518db7bf7fb3c7f942bfb2c0c7b832e375e82b2f285379bd0935e42aa1833817daacb4fca2a6a9500bc"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "12b05c61f49caab0b845e93967228a3bd3ab096c4ea1516cb7263f49963137a688a178ddebe790ccc3c0c73f2d4440fc"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "87151e10c182a828d06fb5299361f01091f5ff066c3d8ba1fac0358d40c370a06ea46d9d93613499ebf94a855aef2f41"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "2047730cb45c594da67d019cbd9f379e1d409a574deadfc9bc907461047f1fde"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "5fde3529958bd5e9567f0dc6015c58621521641cfe0517eb1237413c750558415fdeb45cc1b4332c3d1f09938fc8fe327de86cc876ed52594c216d2c04c9d2d5"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0?type=jar",
-      "externalReferences" : [
-        {
-          "type" : "website",
-          "url" : "https://logging.apache.org/log4j/2.x/log4j-api/"
-        },
-        {
-          "type" : "build-system",
-          "url" : "https://github.com/apache/logging-log4j2/actions"
-        },
-        {
-          "type" : "distribution",
-          "url" : "https://logging.apache.org/log4j/2.x/download.html"
-        },
-        {
-          "type" : "issue-tracker",
-          "url" : "https://github.com/apache/logging-log4j2/issues"
-        },
-        {
-          "type" : "mailing-list",
-          "url" : "https://lists.apache.org/list.html?log4j-user@logging.apache.org"
-        },
-        {
-          "type" : "vcs",
-          "url" : "https://github.com/apache/logging-log4j2/log4j-api"
-        }
-      ],
-      "type" : "library",
-      "bom-ref" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0?type=jar"
     },
     {
       "publisher" : "QOS.ch",
@@ -2426,6 +2348,84 @@
       ],
       "type" : "library",
       "bom-ref" : "pkg:maven/org.springframework/spring-jcl@6.0.12?type=jar"
+    },
+    {
+      "publisher" : "Apache Software Foundation",
+      "group" : "org.apache.logging.log4j",
+      "name" : "log4j-api",
+      "version" : "2.0.1",
+      "description" : "The Log4j API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "0c527fdc90ae72984ef0386489df4dcb"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "b705d54674992e063b04b34a824af1948b0bfcc6"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "6d269bc8594faa1fe7514a5e9ab98ed601ef54d1c2dceb8b8fc29a740850376b"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "4423292d15700d57d577e0db45ac97e2ec7b2c76d69b04ebc65f1be6d89be37c2fb26fc9fb9da418c76f3000b5c01bb48d45b29354df4ae9dede1a9c5a14b936"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "19da7b6d537d3761329fc9e522c9f2c250ca60844d89a40e2b641440a43fc3685c7c63425c9399d7610705e6ebffec71"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "96671f815d8f4ef2c833b33317d1eb0aad1fff0b83a22530d38776125c6faf1fa9d273c2793cbee5199f609f4de447a7"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "bd03ba4b0fd6894e51dd8edbf3607e6411cbc406cf0c344a9c1861b1f6468436"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "1283943ba371f7c296b6066697be4263a24879c294b995511957b9581d62643760e83055a95cfdc80b73a903f4d67c59f7b0807cc0456bcf6bf80b9033bc2f24"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://logging.apache.org/log4j/2.x/log4j-api/"
+        },
+        {
+          "type" : "build-system",
+          "url" : "http://vmgump.apache.org/gump/public/logging-log4j-20/logging-log4j-20/index.html"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "http://issues.apache.org/jira/browse/LOG4J2"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "http://mail-archives.apache.org/mod_mbox/logging-log4j-user/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "http://svn.apache.org/viewvc/logging/log4j/log4j2/tags/log4j-2.0.1/log4j-api"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.0.1?type=jar"
     }
   ],
   "dependencies" : [
@@ -2433,7 +2433,8 @@
       "ref" : "pkg:maven/com.securedevops/secure@0.0.1?type=jar",
       "dependsOn" : [
         "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-devtools@3.1.4?type=jar"
+        "pkg:maven/org.springframework.boot/spring-boot-devtools@3.1.4?type=jar",
+        "pkg:maven/org.apache.logging.log4j/log4j-api@2.0.1?type=jar"
       ]
     },
     {
@@ -2534,12 +2535,12 @@
     {
       "ref" : "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.20.0?type=jar",
       "dependsOn" : [
-        "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0?type=jar",
+        "pkg:maven/org.apache.logging.log4j/log4j-api@2.0.1?type=jar",
         "pkg:maven/org.slf4j/slf4j-api@2.0.9?type=jar"
       ]
     },
     {
-      "ref" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0?type=jar",
+      "ref" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.0.1?type=jar",
       "dependsOn" : [ ]
     },
     {
