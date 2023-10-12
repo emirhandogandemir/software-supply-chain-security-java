@@ -64,6 +64,12 @@ We can use below command for project SCA
 
 ![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/11d5e107-f421-460c-a88d-912dadcead96)
 
+## Cosign 
+
+
+
+
+## Kyverno
 
 ![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/de7bba07-253e-4eb1-8792-4b1b19762d19)
 
