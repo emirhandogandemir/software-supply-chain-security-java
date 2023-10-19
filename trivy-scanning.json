@@ -1,0 +1,3420 @@
+[
+  {
+    "Target": "dogandemir51/secure:0.0.1 (oracle 8.5)",
+    "Type": "oracle",
+    "Vulnerabilities": [
+      {
+        "VulnerabilityID": "CVE-2022-22576",
+        "PkgName": "curl",
+        "InstalledVersion": "7.61.1-22.el8",
+        "FixedVersion": "7.61.1-22.el8_6.3",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22576",
+        "Title": "curl: OAUTH2 bearer bypass in connection re-use",
+        "Description": "An improper authentication vulnerability exists in curl 7.33.0 to and including 7.82.0 which might allow reuse OAUTH2-authenticated connections without properly making sure that the connection was authenticated with the same credentials as set for this transfer. This affects SASL-enabled protocols: SMPTP(S), IMAP(S), POP3(S) and LDAP(S) (openldap only).",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-287"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+            "V2Score": 5.5,
+            "V3Score": 8.1
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+            "V3Score": 8.1
+          }
+        },
+        "References": [
+          "https://curl.se/docs/CVE-2022-22576.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22576",
+          "https://hackerone.com/reports/1526328",
+          "https://linux.oracle.com/cve/CVE-2022-22576.html",
+          "https://linux.oracle.com/errata/ELSA-2022-5313.html",
+          "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+          "https://security.gentoo.org/glsa/202212-01",
+          "https://security.netapp.com/advisory/ntap-20220609-0008/",
+          "https://ubuntu.com/security/notices/USN-5397-1",
+          "https://www.debian.org/security/2022/dsa-5197"
+        ],
+        "PublishedDate": "2022-05-26T17:15:00Z",
+        "LastModifiedDate": "2023-01-05T18:10:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-27782",
+        "PkgName": "curl",
+        "InstalledVersion": "7.61.1-22.el8",
+        "FixedVersion": "7.61.1-22.el8_6.3",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-27782",
+        "Title": "curl: TLS and SSH connection too eager reuse",
+        "Description": "libcurl would reuse a previously created connection even when a TLS or SSHrelated option had been changed that should have prohibited reuse.libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse if one of them matches the setup. However, several TLS andSSH settings were left out from the configuration match checks, making themmatch too easily.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-295"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://curl.se/docs/CVE-2022-27782.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27782",
+          "https://hackerone.com/reports/1555796",
+          "https://linux.oracle.com/cve/CVE-2022-27782.html",
+          "https://linux.oracle.com/errata/ELSA-2022-5313.html",
+          "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+          "https://security.gentoo.org/glsa/202212-01",
+          "https://security.netapp.com/advisory/ntap-20220609-0009/",
+          "https://ubuntu.com/security/notices/USN-5412-1",
+          "https://www.debian.org/security/2022/dsa-5197"
+        ],
+        "PublishedDate": "2022-06-02T14:15:00Z",
+        "LastModifiedDate": "2023-01-05T17:51:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-27774",
+        "PkgName": "curl",
+        "InstalledVersion": "7.61.1-22.el8",
+        "FixedVersion": "7.61.1-22.el8_6.3",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-27774",
+        "Title": "curl: credential leak on redirect",
+        "Description": "An insufficiently protected credentials vulnerability exists in curl 4.9 to and include curl 7.82.0 are affected that could allow an attacker to extract credentials when follows HTTP(S) redirects is used with authentication could leak credentials to other services that exist on different protocols or port numbers.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-522"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:S/C:P/I:N/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N",
+            "V2Score": 3.5,
+            "V3Score": 5.7
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L",
+            "V3Score": 5
+          }
+        },
+        "References": [
+          "https://curl.se/docs/CVE-2022-27774.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27774",
+          "https://hackerone.com/reports/1543773",
+          "https://linux.oracle.com/cve/CVE-2022-27774.html",
+          "https://linux.oracle.com/errata/ELSA-2022-5313.html",
+          "https://lists.debian.org/debian-lts-announce/2023/01/msg00028.html",
+          "https://security.gentoo.org/glsa/202212-01",
+          "https://security.netapp.com/advisory/ntap-20220609-0008/",
+          "https://ubuntu.com/security/notices/USN-5397-1",
+          "https://www.debian.org/security/2022/dsa-5197"
+        ],
+        "PublishedDate": "2022-06-02T14:15:00Z",
+        "LastModifiedDate": "2023-01-29T00:15:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-27776",
+        "PkgName": "curl",
+        "InstalledVersion": "7.61.1-22.el8",
+        "FixedVersion": "7.61.1-22.el8_6.3",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-27776",
+        "Title": "curl: auth/cookie leak on redirect",
+        "Description": "A insufficiently protected credentials vulnerability in fixed in curl 7.83.0 might leak authentication or cookie header data on HTTP redirects to the same host but another port number.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-522"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+            "V2Score": 4.3,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+            "V3Score": 4.3
+          }
+        },
+        "References": [
+          "https://curl.se/docs/CVE-2022-27776.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27776",
+          "https://hackerone.com/reports/1547048",
+          "https://linux.oracle.com/cve/CVE-2022-27776.html",
+          "https://linux.oracle.com/errata/ELSA-2022-5313.html",
+          "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7N5ZBWLNNPZKFK7Q4KEHGCJ2YELQEUJP/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DKKOQXPYLMBSEVDHFS32BPBR3ZQJKY5B/",
+          "https://security.gentoo.org/glsa/202212-01",
+          "https://security.netapp.com/advisory/ntap-20220609-0008/",
+          "https://ubuntu.com/security/notices/USN-5397-1",
+          "https://www.debian.org/security/2022/dsa-5197"
+        ],
+        "PublishedDate": "2022-06-02T14:15:00Z",
+        "LastModifiedDate": "2023-01-05T18:06:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-32206",
+        "PkgName": "curl",
+        "InstalledVersion": "7.61.1-22.el8",
+        "FixedVersion": "7.61.1-22.el8_6.4",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32206",
+        "Title": "curl: HTTP compression denial of service",
+        "Description": "curl \u003c 7.84.0 supports \"chained\" HTTP compression algorithms, meaning that a serverresponse can be compressed multiple times and potentially with different algorithms. The number of acceptable \"links\" in this \"decompression chain\" was unbounded, allowing a malicious server to insert a virtually unlimited number of compression steps.The use of such a decompression chain could result in a \"malloc bomb\", makingcurl end up spending enormous amounts of allocated heap memory, or trying toand returning out of memory errors.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-770"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+            "V2Score": 4.3,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+            "V3Score": 6.5
+          }
+        },
+        "References": [
+          "http://seclists.org/fulldisclosure/2022/Oct/28",
+          "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "https://cert-portal.siemens.com/productcert/pdf/ssa-333517.pdf",
+          "https://curl.se/docs/CVE-2022-32206.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32206",
+          "https://hackerone.com/reports/1570651",
+          "https://linux.oracle.com/cve/CVE-2022-32206.html",
+          "https://linux.oracle.com/errata/ELSA-2022-6159.html",
+          "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+          "https://security.gentoo.org/glsa/202212-01",
+          "https://security.netapp.com/advisory/ntap-20220915-0003/",
+          "https://support.apple.com/kb/HT213488",
+          "https://ubuntu.com/security/notices/USN-5495-1",
+          "https://www.debian.org/security/2022/dsa-5197"
+        ],
+        "PublishedDate": "2022-07-07T13:15:00Z",
+        "LastModifiedDate": "2023-01-05T17:46:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-32208",
+        "PkgName": "curl",
+        "InstalledVersion": "7.61.1-22.el8",
+        "FixedVersion": "7.61.1-22.el8_6.4",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32208",
+        "Title": "curl: FTP-KRB bad message verification",
+        "Description": "When curl \u003c 7.84.0 does FTP transfers secured by krb5, it handles message verification failures wrongly. This flaw makes it possible for a Man-In-The-Middle attack to go unnoticed and even allows it to inject data to the client.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-787"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "V2Score": 4.3,
+            "V3Score": 5.9
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "http://seclists.org/fulldisclosure/2022/Oct/28",
+          "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "https://curl.se/docs/CVE-2022-32208.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32208",
+          "https://hackerone.com/reports/1590071",
+          "https://linux.oracle.com/cve/CVE-2022-32208.html",
+          "https://linux.oracle.com/errata/ELSA-2022-6159.html",
+          "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+          "https://security.gentoo.org/glsa/202212-01",
+          "https://security.netapp.com/advisory/ntap-20220915-0003/",
+          "https://support.apple.com/kb/HT213488",
+          "https://ubuntu.com/security/notices/USN-5495-1",
+          "https://ubuntu.com/security/notices/USN-5499-1",
+          "https://www.debian.org/security/2022/dsa-5197"
+        ],
+        "PublishedDate": "2022-07-07T13:15:00Z",
+        "LastModifiedDate": "2023-01-05T17:43:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-25314",
+        "PkgName": "expat",
+        "InstalledVersion": "2.2.5-4.0.1.el8_5.3",
+        "FixedVersion": "2.2.5-8.0.1.el8_6.2",
+        "Layer": {
+          "DiffID": "sha256:27ee19dc88f2661d3e42161a9b0b5f4c59089269ee71c9f212c71139ea9edf52"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-25314",
+        "Title": "expat: Integer overflow in copyString()",
+        "Description": "In Expat (aka libexpat) before 2.4.5, there is an integer overflow in copyString.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-190"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "http://www.openwall.com/lists/oss-security/2022/02/19/1",
+          "https://blog.hartwork.org/posts/expat-2-4-5-released/",
+          "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25314",
+          "https://github.com/libexpat/libexpat/pull/560",
+          "https://linux.oracle.com/cve/CVE-2022-25314.html",
+          "https://linux.oracle.com/errata/ELSA-2022-5314.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3UFRBA3UQVIQKXTBUQXDWQOVWNBKLERU/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Y27XO3JMKAOMQZVPS3B4MJGEAHCZF5OM/",
+          "https://security.gentoo.org/glsa/202209-24",
+          "https://security.netapp.com/advisory/ntap-20220303-0008/",
+          "https://ubuntu.com/security/notices/USN-5320-1",
+          "https://www.debian.org/security/2022/dsa-5085",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        ],
+        "PublishedDate": "2022-02-18T05:15:00Z",
+        "LastModifiedDate": "2022-10-05T20:59:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-40674",
+        "PkgName": "expat",
+        "InstalledVersion": "2.2.5-4.0.1.el8_5.3",
+        "FixedVersion": "2.2.5-8.0.1.el8_6.3",
+        "Layer": {
+          "DiffID": "sha256:27ee19dc88f2661d3e42161a9b0b5f4c59089269ee71c9f212c71139ea9edf52"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-40674",
+        "Title": "expat: a use-after-free in the doContent function in xmlparse.c",
+        "Description": "libexpat before 2.4.9 has a use-after-free in the doContent function in xmlparse.c.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-416"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 8.1
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 8.1
+          }
+        },
+        "References": [
+          "https://blog.hartwork.org/posts/expat-2-4-9-released/",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40674",
+          "https://github.com/advisories/GHSA-2vq2-xc55-3j5m",
+          "https://github.com/libexpat/libexpat/pull/629",
+          "https://github.com/libexpat/libexpat/pull/640",
+          "https://linux.oracle.com/cve/CVE-2022-40674.html",
+          "https://linux.oracle.com/errata/ELSA-2022-9967.html",
+          "https://lists.debian.org/debian-lts-announce/2022/09/msg00029.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GSVZN3IJ6OCPSJL7AEX3ZHSHAHFOGESK/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/J2IGJNHFV53PYST7VQV3T4NHVYAMXA36/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LQB6FJAM5YQ35SF5B2MN25Y2FX56EOEZ/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WE2ZKEPGFCZ7R6DRVH3K6RBJPT42ZBEG/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XCGBVQQ47URGJAZWHCISHDWF6QBTV2LE/",
+          "https://security.gentoo.org/glsa/202209-24",
+          "https://security.gentoo.org/glsa/202211-06",
+          "https://security.netapp.com/advisory/ntap-20221028-0008/",
+          "https://ubuntu.com/security/notices/USN-5638-1",
+          "https://ubuntu.com/security/notices/USN-5638-2",
+          "https://ubuntu.com/security/notices/USN-5726-1",
+          "https://www.debian.org/security/2022/dsa-5236"
+        ],
+        "PublishedDate": "2022-09-14T11:15:00Z",
+        "LastModifiedDate": "2023-02-01T19:16:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-43680",
+        "PkgName": "expat",
+        "InstalledVersion": "2.2.5-4.0.1.el8_5.3",
+        "FixedVersion": "2.2.5-10.0.1.el8_7.1",
+        "Layer": {
+          "DiffID": "sha256:27ee19dc88f2661d3e42161a9b0b5f4c59089269ee71c9f212c71139ea9edf52"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-43680",
+        "Title": "expat: use-after free caused by overeager destruction of a shared DTD in XML_ExternalEntityParserCreate",
+        "Description": "In libexpat through 2.4.9, there is a use-after free caused by overeager destruction of a shared DTD in XML_ExternalEntityParserCreate in out-of-memory situations.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-416"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-43680",
+          "https://github.com/libexpat/libexpat/issues/649",
+          "https://github.com/libexpat/libexpat/pull/616",
+          "https://github.com/libexpat/libexpat/pull/650",
+          "https://linux.oracle.com/cve/CVE-2022-43680.html",
+          "https://linux.oracle.com/errata/ELSA-2023-0337.html",
+          "https://lists.debian.org/debian-lts-announce/2022/10/msg00033.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AJ5VY2VYXE4WTRGQ6LMGLF6FV3SY37YE/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BY4OPSIB33ETNUXZY2UPZ4NGQ3OKDY4D/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DPQVIF6TOJNY2T3ZZETFKR4G34FFREBQ/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FFCOMBSOJKLIKCGCJWHLJXO4EVYBG7AR/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IUJ2BULJTZ2BMSKQHB6US674P55UCWWS/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XG5XOOB7CD55CEE6OJYKSACSIMQ4RWQ6/",
+          "https://security.gentoo.org/glsa/202210-38",
+          "https://security.netapp.com/advisory/ntap-20221118-0007/",
+          "https://ubuntu.com/security/notices/USN-5638-2",
+          "https://ubuntu.com/security/notices/USN-5638-3",
+          "https://www.debian.org/security/2022/dsa-5266"
+        ],
+        "PublishedDate": "2022-10-24T14:15:00Z",
+        "LastModifiedDate": "2022-12-02T23:00:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-25313",
+        "PkgName": "expat",
+        "InstalledVersion": "2.2.5-4.0.1.el8_5.3",
+        "FixedVersion": "2.2.5-8.0.1.el8_6.2",
+        "Layer": {
+          "DiffID": "sha256:27ee19dc88f2661d3e42161a9b0b5f4c59089269ee71c9f212c71139ea9edf52"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-25313",
+        "Title": "expat: Stack exhaustion in doctype parsing",
+        "Description": "In Expat (aka libexpat) before 2.4.5, an attacker can trigger stack exhaustion in build_model via a large nesting depth in the DTD element.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+            "V2Score": 4.3,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+            "V3Score": 6.5
+          }
+        },
+        "References": [
+          "http://www.openwall.com/lists/oss-security/2022/02/19/1",
+          "https://blog.hartwork.org/posts/expat-2-4-5-released/",
+          "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25313",
+          "https://github.com/libexpat/libexpat/pull/558",
+          "https://linux.oracle.com/cve/CVE-2022-25313.html",
+          "https://linux.oracle.com/errata/ELSA-2022-5314.html",
+          "https://lists.debian.org/debian-lts-announce/2022/03/msg00007.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3UFRBA3UQVIQKXTBUQXDWQOVWNBKLERU/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Y27XO3JMKAOMQZVPS3B4MJGEAHCZF5OM/",
+          "https://security.gentoo.org/glsa/202209-24",
+          "https://security.netapp.com/advisory/ntap-20220303-0008/",
+          "https://ubuntu.com/security/notices/USN-5320-1",
+          "https://www.debian.org/security/2022/dsa-5085",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        ],
+        "PublishedDate": "2022-02-18T05:15:00Z",
+        "LastModifiedDate": "2022-10-07T14:31:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-27404",
+        "PkgName": "freetype",
+        "InstalledVersion": "2.9.1-4.el8_3.1",
+        "FixedVersion": "2.9.1-9.el8",
+        "Layer": {
+          "DiffID": "sha256:27ee19dc88f2661d3e42161a9b0b5f4c59089269ee71c9f212c71139ea9edf52"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-27404",
+        "Title": "FreeType: Buffer overflow in sfnt_init_face",
+        "Description": "FreeType commit 1e2eb65048f75c64b68708efed6ce904c31f3b2f was discovered to contain a heap buffer overflow via the function sfnt_init_face.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-787"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:H",
+            "V3Score": 7.6
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27404",
+          "https://gitlab.freedesktop.org/freetype/freetype/-/issues/1138",
+          "https://linux.oracle.com/cve/CVE-2022-27404.html",
+          "https://linux.oracle.com/errata/ELSA-2022-8340.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EFPNRKDLCXHZVYYQLQMP44UHLU32GA6Z/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FDU2FOEMCEF6WVR6ZBIH5MT5O7FAK6UP/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IWQ7IB2A75MEHM63WEUXBYEC7OR5SGDY/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NYVC2NPKKXKP3TWJWG4ONYWNO6ZPHLA5/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TCEMWCM46PKM4U5ENRASPKQD6JDOLKRU/",
+          "https://ubuntu.com/security/notices/USN-5528-1"
+        ],
+        "PublishedDate": "2022-04-22T14:15:00Z",
+        "LastModifiedDate": "2022-07-27T13:44:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-27405",
+        "PkgName": "freetype",
+        "InstalledVersion": "2.9.1-4.el8_3.1",
+        "FixedVersion": "2.9.1-9.el8",
+        "Layer": {
+          "DiffID": "sha256:27ee19dc88f2661d3e42161a9b0b5f4c59089269ee71c9f212c71139ea9edf52"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-27405",
+        "Title": "FreeType: Segmentation violation via FNT_Size_Request",
+        "Description": "FreeType commit 53dfdcd8198d2b3201a23c4bad9190519ba918db was discovered to contain a segmentation violation via the function FNT_Size_Request.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-125"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+            "V3Score": 7.1
+          }
+        },
+        "References": [
+          "http://freetype.com",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27405",
+          "https://gitlab.freedesktop.org/freetype/freetype/-/issues/1139",
+          "https://linux.oracle.com/cve/CVE-2022-27405.html",
+          "https://linux.oracle.com/errata/ELSA-2022-8340.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EFPNRKDLCXHZVYYQLQMP44UHLU32GA6Z/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FDU2FOEMCEF6WVR6ZBIH5MT5O7FAK6UP/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IWQ7IB2A75MEHM63WEUXBYEC7OR5SGDY/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NYVC2NPKKXKP3TWJWG4ONYWNO6ZPHLA5/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TCEMWCM46PKM4U5ENRASPKQD6JDOLKRU/",
+          "https://ubuntu.com/security/notices/USN-5528-1"
+        ],
+        "PublishedDate": "2022-04-22T14:15:00Z",
+        "LastModifiedDate": "2022-07-27T16:04:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-27406",
+        "PkgName": "freetype",
+        "InstalledVersion": "2.9.1-4.el8_3.1",
+        "FixedVersion": "2.9.1-9.el8",
+        "Layer": {
+          "DiffID": "sha256:27ee19dc88f2661d3e42161a9b0b5f4c59089269ee71c9f212c71139ea9edf52"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-27406",
+        "Title": "Freetype: Segmentation violation via FT_Request_Size",
+        "Description": "FreeType commit 22a0cccb4d9d002f33c1ba7a4b36812c7d4f46b5 was discovered to contain a segmentation violation via the function FT_Request_Size.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-125"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+            "V3Score": 7.1
+          }
+        },
+        "References": [
+          "http://freetype.com",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27406",
+          "https://gitlab.freedesktop.org/freetype/freetype/-/issues/1140",
+          "https://linux.oracle.com/cve/CVE-2022-27406.html",
+          "https://linux.oracle.com/errata/ELSA-2022-8340.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EFPNRKDLCXHZVYYQLQMP44UHLU32GA6Z/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FDU2FOEMCEF6WVR6ZBIH5MT5O7FAK6UP/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IWQ7IB2A75MEHM63WEUXBYEC7OR5SGDY/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NYVC2NPKKXKP3TWJWG4ONYWNO6ZPHLA5/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TCEMWCM46PKM4U5ENRASPKQD6JDOLKRU/",
+          "https://ubuntu.com/security/notices/USN-5453-1",
+          "https://ubuntu.com/security/notices/USN-5528-1"
+        ],
+        "PublishedDate": "2022-04-22T14:15:00Z",
+        "LastModifiedDate": "2022-07-27T16:05:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-22624",
+        "PkgName": "glib2",
+        "InstalledVersion": "2.56.4-156.el8",
+        "FixedVersion": "2.56.4-159.0.1.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22624",
+        "Title": "webkitgtk: Use-after-free leading to arbitrary code execution",
+        "Description": "A use after free issue was addressed with improved memory management. This issue is fixed in macOS Monterey 12.3, iOS 15.4 and iPadOS 15.4, tvOS 15.4, Safari 15.4. Processing maliciously crafted web content may lead to arbitrary code execution.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-416"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22624",
+          "https://linux.oracle.com/cve/CVE-2022-22624.html",
+          "https://linux.oracle.com/errata/ELSA-2022-8054.html",
+          "https://support.apple.com/en-us/HT213182",
+          "https://support.apple.com/en-us/HT213183",
+          "https://support.apple.com/en-us/HT213186",
+          "https://support.apple.com/en-us/HT213187",
+          "https://ubuntu.com/security/notices/USN-5394-1",
+          "https://webkitgtk.org/security/WSA-2022-0004.html"
+        ],
+        "PublishedDate": "2022-09-23T19:15:00Z",
+        "LastModifiedDate": "2022-09-28T12:03:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-22628",
+        "PkgName": "glib2",
+        "InstalledVersion": "2.56.4-156.el8",
+        "FixedVersion": "2.56.4-159.0.1.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22628",
+        "Title": "webkitgtk: Use-after-free leading to arbitrary code execution",
+        "Description": "A use after free issue was addressed with improved memory management. This issue is fixed in macOS Monterey 12.3, Safari 15.4, watchOS 8.5, iOS 15.4 and iPadOS 15.4, tvOS 15.4. Processing maliciously crafted web content may lead to arbitrary code execution.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-416"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22628",
+          "https://linux.oracle.com/cve/CVE-2022-22628.html",
+          "https://linux.oracle.com/errata/ELSA-2022-8054.html",
+          "https://support.apple.com/en-us/HT213182",
+          "https://support.apple.com/en-us/HT213183",
+          "https://support.apple.com/en-us/HT213186",
+          "https://support.apple.com/en-us/HT213187",
+          "https://support.apple.com/en-us/HT213193",
+          "https://ubuntu.com/security/notices/USN-5394-1",
+          "https://webkitgtk.org/security/WSA-2022-0004.html"
+        ],
+        "PublishedDate": "2022-09-23T19:15:00Z",
+        "LastModifiedDate": "2022-09-28T12:06:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-22629",
+        "PkgName": "glib2",
+        "InstalledVersion": "2.56.4-156.el8",
+        "FixedVersion": "2.56.4-159.0.1.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22629",
+        "Title": "webkitgtk: Buffer overflow leading to arbitrary code execution",
+        "Description": "A buffer overflow issue was addressed with improved memory handling. This issue is fixed in macOS Monterey 12.3, Safari 15.4, watchOS 8.5, iTunes 12.12.3 for Windows, iOS 15.4 and iPadOS 15.4, tvOS 15.4. Processing maliciously crafted web content may lead to arbitrary code execution.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-787"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22629",
+          "https://linux.oracle.com/cve/CVE-2022-22629.html",
+          "https://linux.oracle.com/errata/ELSA-2022-8054.html",
+          "https://support.apple.com/en-us/HT213182",
+          "https://support.apple.com/en-us/HT213183",
+          "https://support.apple.com/en-us/HT213186",
+          "https://support.apple.com/en-us/HT213187",
+          "https://support.apple.com/en-us/HT213188",
+          "https://support.apple.com/en-us/HT213193",
+          "https://ubuntu.com/security/notices/USN-5394-1",
+          "https://webkitgtk.org/security/WSA-2022-0004.html"
+        ],
+        "PublishedDate": "2022-09-23T20:15:00Z",
+        "LastModifiedDate": "2022-09-27T04:48:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-26700",
+        "PkgName": "glib2",
+        "InstalledVersion": "2.56.4-156.el8",
+        "FixedVersion": "2.56.4-159.0.1.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-26700",
+        "Title": "webkitgtk: Memory corruption issue leading to arbitrary code execution",
+        "Description": "A memory corruption issue was addressed with improved state management. This issue is fixed in tvOS 15.5, watchOS 8.6, iOS 15.5 and iPadOS 15.5, macOS Monterey 12.4, Safari 15.5. Processing maliciously crafted web content may lead to code execution.",
+        "Severity": "HIGH",
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26700",
+          "https://linux.oracle.com/cve/CVE-2022-26700.html",
+          "https://linux.oracle.com/errata/ELSA-2022-8054.html",
+          "https://support.apple.com/en-us/HT213253",
+          "https://support.apple.com/en-us/HT213254",
+          "https://support.apple.com/en-us/HT213257",
+          "https://support.apple.com/en-us/HT213258",
+          "https://support.apple.com/en-us/HT213260",
+          "https://ubuntu.com/security/notices/USN-5457-1",
+          "https://webkitgtk.org/security/WSA-2022-0005.html"
+        ],
+        "PublishedDate": "2022-09-23T19:15:00Z",
+        "LastModifiedDate": "2023-01-09T16:41:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-26709",
+        "PkgName": "glib2",
+        "InstalledVersion": "2.56.4-156.el8",
+        "FixedVersion": "2.56.4-159.0.1.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-26709",
+        "Title": "webkitgtk: Use-after-free leading to arbitrary code execution",
+        "Description": "A use after free issue was addressed with improved memory management. This issue is fixed in tvOS 15.5, iOS 15.5 and iPadOS 15.5, watchOS 8.6, macOS Monterey 12.4, Safari 15.5. Processing maliciously crafted web content may lead to arbitrary code execution.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-416"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26709",
+          "https://linux.oracle.com/cve/CVE-2022-26709.html",
+          "https://linux.oracle.com/errata/ELSA-2022-8054.html",
+          "https://support.apple.com/en-us/HT213253",
+          "https://support.apple.com/en-us/HT213254",
+          "https://support.apple.com/en-us/HT213257",
+          "https://support.apple.com/en-us/HT213258",
+          "https://support.apple.com/en-us/HT213260",
+          "https://ubuntu.com/security/notices/USN-5457-1",
+          "https://webkitgtk.org/security/WSA-2022-0005.html"
+        ],
+        "PublishedDate": "2022-11-01T20:15:00Z",
+        "LastModifiedDate": "2022-11-03T13:47:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-26710",
+        "PkgName": "glib2",
+        "InstalledVersion": "2.56.4-156.el8",
+        "FixedVersion": "2.56.4-159.0.1.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-26710",
+        "Title": "webkitgtk: Use-after-free leading to arbitrary code execution",
+        "Description": "A use after free issue was addressed with improved memory management. This issue is fixed in iOS 15.5 and iPadOS 15.5, macOS Monterey 12.4, tvOS 15.5, watchOS 8.6. Processing maliciously crafted web content may lead to arbitrary code execution.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-416"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26710",
+          "https://linux.oracle.com/cve/CVE-2022-26710.html",
+          "https://linux.oracle.com/errata/ELSA-2022-8054.html",
+          "https://support.apple.com/en-us/HT213253",
+          "https://support.apple.com/en-us/HT213254",
+          "https://support.apple.com/en-us/HT213257",
+          "https://support.apple.com/en-us/HT213258",
+          "https://ubuntu.com/security/notices/USN-5522-1",
+          "https://webkitgtk.org/security/WSA-2022-0006.html"
+        ],
+        "PublishedDate": "2022-11-01T20:15:00Z",
+        "LastModifiedDate": "2022-11-03T13:48:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-26716",
+        "PkgName": "glib2",
+        "InstalledVersion": "2.56.4-156.el8",
+        "FixedVersion": "2.56.4-159.0.1.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-26716",
+        "Title": "webkitgtk: Memory corruption issue leading to arbitrary code execution",
+        "Description": "A memory corruption issue was addressed with improved state management. This issue is fixed in tvOS 15.5, iOS 15.5 and iPadOS 15.5, watchOS 8.6, macOS Monterey 12.4, Safari 15.5. Processing maliciously crafted web content may lead to arbitrary code execution.",
+        "Severity": "HIGH",
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26716",
+          "https://linux.oracle.com/cve/CVE-2022-26716.html",
+          "https://linux.oracle.com/errata/ELSA-2022-8054.html",
+          "https://support.apple.com/en-us/HT213253",
+          "https://support.apple.com/en-us/HT213254",
+          "https://support.apple.com/en-us/HT213257",
+          "https://support.apple.com/en-us/HT213258",
+          "https://support.apple.com/en-us/HT213260",
+          "https://ubuntu.com/security/notices/USN-5457-1",
+          "https://webkitgtk.org/security/WSA-2022-0005.html"
+        ],
+        "PublishedDate": "2022-11-01T20:15:00Z",
+        "LastModifiedDate": "2022-11-03T13:48:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-26717",
+        "PkgName": "glib2",
+        "InstalledVersion": "2.56.4-156.el8",
+        "FixedVersion": "2.56.4-159.0.1.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-26717",
+        "Title": "webkitgtk: Use-after-free leading to arbitrary code execution",
+        "Description": "A use after free issue was addressed with improved memory management. This issue is fixed in tvOS 15.5, watchOS 8.6, iOS 15.5 and iPadOS 15.5, macOS Monterey 12.4, Safari 15.5, iTunes 12.12.4 for Windows. Processing maliciously crafted web content may lead to arbitrary code execution.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-416"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26717",
+          "https://linux.oracle.com/cve/CVE-2022-26717.html",
+          "https://linux.oracle.com/errata/ELSA-2022-8054.html",
+          "https://support.apple.com/en-us/HT213253",
+          "https://support.apple.com/en-us/HT213254",
+          "https://support.apple.com/en-us/HT213257",
+          "https://support.apple.com/en-us/HT213258",
+          "https://support.apple.com/en-us/HT213259",
+          "https://support.apple.com/en-us/HT213260",
+          "https://ubuntu.com/security/notices/USN-5457-1",
+          "https://webkitgtk.org/security/WSA-2022-0005.html"
+        ],
+        "PublishedDate": "2022-11-01T20:15:00Z",
+        "LastModifiedDate": "2022-11-03T13:14:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-26719",
+        "PkgName": "glib2",
+        "InstalledVersion": "2.56.4-156.el8",
+        "FixedVersion": "2.56.4-159.0.1.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-26719",
+        "Title": "webkitgtk: Memory corruption issue leading to arbitrary code execution",
+        "Description": "A memory corruption issue was addressed with improved state management. This issue is fixed in tvOS 15.5, iOS 15.5 and iPadOS 15.5, watchOS 8.6, macOS Monterey 12.4, Safari 15.5. Processing maliciously crafted web content may lead to arbitrary code execution.",
+        "Severity": "HIGH",
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26719",
+          "https://linux.oracle.com/cve/CVE-2022-26719.html",
+          "https://linux.oracle.com/errata/ELSA-2022-8054.html",
+          "https://support.apple.com/en-us/HT213253",
+          "https://support.apple.com/en-us/HT213254",
+          "https://support.apple.com/en-us/HT213257",
+          "https://support.apple.com/en-us/HT213258",
+          "https://support.apple.com/en-us/HT213260",
+          "https://ubuntu.com/security/notices/USN-5457-1",
+          "https://webkitgtk.org/security/WSA-2022-0005.html"
+        ],
+        "PublishedDate": "2022-11-01T20:15:00Z",
+        "LastModifiedDate": "2022-11-03T13:15:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-30293",
+        "PkgName": "glib2",
+        "InstalledVersion": "2.56.4-156.el8",
+        "FixedVersion": "2.56.4-159.0.1.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-30293",
+        "Title": "webkitgtk: Heap buffer overflow in WebCore::TextureMapperLayer::setContentsLayer leading to arbitrary code execution",
+        "Description": "In WebKitGTK through 2.36.0 (and WPE WebKit), there is a heap-based buffer overflow in WebCore::TextureMapperLayer::setContentsLayer in WebCore/platform/graphics/texmap/TextureMapperLayer.cpp.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-787"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V2Score": 5.1,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "http://www.openwall.com/lists/oss-security/2022/05/30/1",
+          "https://bugs.webkit.org/show_bug.cgi?id=237187",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30293",
+          "https://github.com/ChijinZ/security_advisories/tree/master/webkitgtk-2.36.0",
+          "https://linux.oracle.com/cve/CVE-2022-30293.html",
+          "https://linux.oracle.com/errata/ELSA-2022-8054.html",
+          "https://security.gentoo.org/glsa/202208-39",
+          "https://www.debian.org/security/2022/dsa-5154",
+          "https://www.debian.org/security/2022/dsa-5155"
+        ],
+        "PublishedDate": "2022-05-06T05:15:00Z",
+        "LastModifiedDate": "2022-10-14T11:25:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-22662",
+        "PkgName": "glib2",
+        "InstalledVersion": "2.56.4-156.el8",
+        "FixedVersion": "2.56.4-159.0.1.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22662",
+        "Title": "webkitgtk: Cookie management issue leading to sensitive user information disclosure",
+        "Description": "A cookie management issue was addressed with improved state management. This issue is fixed in Security Update 2022-003 Catalina, macOS Big Sur 11.6.5. Processing maliciously crafted web content may disclose sensitive user information.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-668"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+            "V2Score": 4.3,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+            "V3Score": 6.5
+          }
+        },
+        "References": [
+          "http://www.openwall.com/lists/oss-security/2022/07/05/3",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22662",
+          "https://linux.oracle.com/cve/CVE-2022-22662.html",
+          "https://linux.oracle.com/errata/ELSA-2022-8054.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/33BWWAQLLBHKGSI332ZZCORTFZ2XLOIH/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ANNHXXARVBRGI74TVQNZOAG6P7AGSMUJ/",
+          "https://security.gentoo.org/glsa/202208-39",
+          "https://support.apple.com/en-us/HT213184",
+          "https://support.apple.com/en-us/HT213185",
+          "https://webkitgtk.org/security/WSA-2022-0006.html"
+        ],
+        "PublishedDate": "2022-05-26T18:15:00Z",
+        "LastModifiedDate": "2022-09-04T18:55:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2019-9169",
+        "PkgName": "glibc",
+        "InstalledVersion": "2.28-164.0.5.el8_5.3",
+        "FixedVersion": "2:2.28-151.0.1.ksplice2.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-9169",
+        "Title": "glibc: regular-expression match via proceed_next_node in posix/regexec.c leads to heap-based buffer over-read",
+        "Description": "In the GNU C Library (aka glibc or libc6) through 2.29, proceed_next_node in posix/regexec.c has a heap-based buffer over-read via an attempted case-insensitive regular-expression match.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-125"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L",
+            "V3Score": 6.5
+          }
+        },
+        "References": [
+          "http://www.securityfocus.com/bid/107160",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9169",
+          "https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34140",
+          "https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34142",
+          "https://kc.mcafee.com/corporate/index?page=content\u0026id=SB10278",
+          "https://linux.oracle.com/cve/CVE-2019-9169.html",
+          "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+          "https://security.gentoo.org/glsa/202006-04",
+          "https://security.netapp.com/advisory/ntap-20190315-0002/",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=24114",
+          "https://sourceware.org/git/gitweb.cgi?p=glibc.git;a=commit;h=583dd860d5b833037175247230a328f0050dbfe9",
+          "https://support.f5.com/csp/article/K54823184",
+          "https://ubuntu.com/security/notices/USN-4416-1",
+          "https://usn.ubuntu.com/4416-1/",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        ],
+        "PublishedDate": "2019-02-26T02:29:00Z",
+        "LastModifiedDate": "2022-06-13T18:59:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-3326",
+        "PkgName": "glibc",
+        "InstalledVersion": "2.28-164.0.5.el8_5.3",
+        "FixedVersion": "2:2.28-151.0.1.ksplice2.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3326",
+        "Title": "glibc: Assertion failure in ISO-2022-JP-3 gconv module related to combining characters",
+        "Description": "The iconv function in the GNU C Library (aka glibc or libc6) 2.32 and earlier, when processing invalid input sequences in the ISO-2022-JP-3 encoding, fails an assertion in the code path and aborts the program, potentially resulting in a denial of service.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-617"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "http://www.openwall.com/lists/oss-security/2021/01/28/2",
+          "https://bugs.chromium.org/p/project-zero/issues/detail?id=2146",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3326",
+          "https://linux.oracle.com/cve/CVE-2021-3326.html",
+          "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+          "https://lists.debian.org/debian-lts-announce/2022/10/msg00021.html",
+          "https://security.gentoo.org/glsa/202107-07",
+          "https://security.netapp.com/advisory/ntap-20210304-0007/",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=27256",
+          "https://sourceware.org/git/?p=glibc.git;a=commit;h=7d88c6142c6efc160c0ee5e4f85cde382c072888",
+          "https://sourceware.org/pipermail/libc-alpha/2021-January/122058.html",
+          "https://ubuntu.com/security/notices/USN-5310-1",
+          "https://ubuntu.com/security/notices/USN-5699-1",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "https://www.oracle.com/security-alerts/cpujan2022.html"
+        ],
+        "PublishedDate": "2021-01-27T20:15:00Z",
+        "LastModifiedDate": "2022-11-04T20:07:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2016-10228",
+        "PkgName": "glibc",
+        "InstalledVersion": "2.28-164.0.5.el8_5.3",
+        "FixedVersion": "2:2.28-151.0.1.ksplice2.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-10228",
+        "Title": "glibc: iconv program can hang when invoked with the -c option",
+        "Description": "The iconv program in the GNU C Library (aka glibc or libc6) 2.31 and earlier, when invoked with multiple suffixes in the destination encoding (TRANSLATE or IGNORE) along with the -c option, enters an infinite loop when processing invalid multi-byte input sequences, leading to a denial of service.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 4.3,
+            "V3Score": 5.9
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+            "V3Score": 3.3
+          }
+        },
+        "References": [
+          "http://openwall.com/lists/oss-security/2017/03/01/10",
+          "http://www.securityfocus.com/bid/96525",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10228",
+          "https://linux.oracle.com/cve/CVE-2016-10228.html",
+          "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+          "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "https://lists.debian.org/debian-lts-announce/2022/10/msg00021.html",
+          "https://security.gentoo.org/glsa/202101-20",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=19519",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=19519#c21",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=26224",
+          "https://ubuntu.com/security/notices/USN-5310-1",
+          "https://ubuntu.com/security/notices/USN-5768-1",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        ],
+        "PublishedDate": "2017-03-02T01:59:00Z",
+        "LastModifiedDate": "2022-10-17T18:15:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2019-25013",
+        "PkgName": "glibc",
+        "InstalledVersion": "2.28-164.0.5.el8_5.3",
+        "FixedVersion": "2:2.28-151.0.1.ksplice2.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-25013",
+        "Title": "glibc: buffer over-read in iconv when processing invalid multi-byte input sequences in the EUC-KR encoding",
+        "Description": "The iconv feature in the GNU C Library (aka glibc or libc6) through 2.32, when processing invalid multi-byte input sequences in the EUC-KR encoding, may have a buffer over-read.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-125"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 7.1,
+            "V3Score": 5.9
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:N/I:N/A:H",
+            "V3Score": 4.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-25013",
+          "https://linux.oracle.com/cve/CVE-2019-25013.html",
+          "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+          "https://lists.apache.org/thread.html/r32d767ac804e9b8aad4355bb85960a6a1385eab7afff549a5e98660f@%3Cjira.kafka.apache.org%3E",
+          "https://lists.apache.org/thread.html/r448bb851cc8e6e3f93f3c28c70032b37062625d81214744474ac49e7@%3Cdev.kafka.apache.org%3E",
+          "https://lists.apache.org/thread.html/r4806a391091e082bdea17266452ca656ebc176e51bb3932733b3a0a2@%3Cjira.kafka.apache.org%3E",
+          "https://lists.apache.org/thread.html/r499e4f96d0b5109ef083f2feccd33c51650c1b7d7068aa3bd47efca9@%3Cjira.kafka.apache.org%3E",
+          "https://lists.apache.org/thread.html/r5af4430421bb6f9973294691a7904bbd260937e9eef96b20556f43ff@%3Cjira.kafka.apache.org%3E",
+          "https://lists.apache.org/thread.html/r750eee18542bc02bd8350861c424ee60a9b9b225568fa09436a37ece@%3Cissues.zookeeper.apache.org%3E",
+          "https://lists.apache.org/thread.html/r7a2e94adfe0a2f0a1d42e4927e8c32ecac97d37db9cb68095fe9ddbc@%3Cdev.zookeeper.apache.org%3E",
+          "https://lists.apache.org/thread.html/rd2354f9ccce41e494fbadcbc5ad87218de6ec0fff8a7b54c8462226c@%3Cissues.zookeeper.apache.org%3E",
+          "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "https://lists.debian.org/debian-lts-announce/2022/10/msg00021.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4Y6TX47P47KABSFOL26FLDNVCWXDKDEZ/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TVCUNLQ3HXGS4VPUQKWTJGRAW2KTFGXS/",
+          "https://security.gentoo.org/glsa/202107-07",
+          "https://security.netapp.com/advisory/ntap-20210205-0004/",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=24973",
+          "https://sourceware.org/git/?p=glibc.git;a=commit;h=ee7a3144c9922808181009b7b3e50e852fb4999b",
+          "https://ubuntu.com/security/notices/USN-5310-1",
+          "https://ubuntu.com/security/notices/USN-5768-1",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        ],
+        "PublishedDate": "2021-01-04T18:15:00Z",
+        "LastModifiedDate": "2022-11-03T19:37:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-27618",
+        "PkgName": "glibc",
+        "InstalledVersion": "2.28-164.0.5.el8_5.3",
+        "FixedVersion": "2:2.28-151.0.1.ksplice2.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-27618",
+        "Title": "glibc: iconv when processing invalid multi-byte input sequences fails to advance the input state, which could result in an infinite loop",
+        "Description": "The iconv function in the GNU C Library (aka glibc or libc6) 2.32 and earlier, when processing invalid multi-byte input sequences in IBM1364, IBM1371, IBM1388, IBM1390, and IBM1399 encodings, fails to advance the input state, which could lead to an infinite loop in applications, resulting in a denial of service, a different vulnerability from CVE-2016-10228.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-835"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 2.1,
+            "V3Score": 5.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 5.5
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27618",
+          "https://linux.oracle.com/cve/CVE-2020-27618.html",
+          "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+          "https://lists.debian.org/debian-lts-announce/2022/10/msg00021.html",
+          "https://security.gentoo.org/glsa/202107-07",
+          "https://security.netapp.com/advisory/ntap-20210401-0006/",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=19519#c21",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=26224",
+          "https://ubuntu.com/security/notices/USN-5310-1",
+          "https://ubuntu.com/security/notices/USN-5768-1",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "https://www.oracle.com/security-alerts/cpujan2022.html"
+        ],
+        "PublishedDate": "2021-02-26T23:15:00Z",
+        "LastModifiedDate": "2022-10-28T20:06:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2019-9169",
+        "PkgName": "glibc-common",
+        "InstalledVersion": "2.28-164.0.5.el8_5.3",
+        "FixedVersion": "2:2.28-151.0.1.ksplice2.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-9169",
+        "Title": "glibc: regular-expression match via proceed_next_node in posix/regexec.c leads to heap-based buffer over-read",
+        "Description": "In the GNU C Library (aka glibc or libc6) through 2.29, proceed_next_node in posix/regexec.c has a heap-based buffer over-read via an attempted case-insensitive regular-expression match.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-125"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L",
+            "V3Score": 6.5
+          }
+        },
+        "References": [
+          "http://www.securityfocus.com/bid/107160",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9169",
+          "https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34140",
+          "https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34142",
+          "https://kc.mcafee.com/corporate/index?page=content\u0026id=SB10278",
+          "https://linux.oracle.com/cve/CVE-2019-9169.html",
+          "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+          "https://security.gentoo.org/glsa/202006-04",
+          "https://security.netapp.com/advisory/ntap-20190315-0002/",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=24114",
+          "https://sourceware.org/git/gitweb.cgi?p=glibc.git;a=commit;h=583dd860d5b833037175247230a328f0050dbfe9",
+          "https://support.f5.com/csp/article/K54823184",
+          "https://ubuntu.com/security/notices/USN-4416-1",
+          "https://usn.ubuntu.com/4416-1/",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        ],
+        "PublishedDate": "2019-02-26T02:29:00Z",
+        "LastModifiedDate": "2022-06-13T18:59:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-3326",
+        "PkgName": "glibc-common",
+        "InstalledVersion": "2.28-164.0.5.el8_5.3",
+        "FixedVersion": "2:2.28-151.0.1.ksplice2.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3326",
+        "Title": "glibc: Assertion failure in ISO-2022-JP-3 gconv module related to combining characters",
+        "Description": "The iconv function in the GNU C Library (aka glibc or libc6) 2.32 and earlier, when processing invalid input sequences in the ISO-2022-JP-3 encoding, fails an assertion in the code path and aborts the program, potentially resulting in a denial of service.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-617"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "http://www.openwall.com/lists/oss-security/2021/01/28/2",
+          "https://bugs.chromium.org/p/project-zero/issues/detail?id=2146",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3326",
+          "https://linux.oracle.com/cve/CVE-2021-3326.html",
+          "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+          "https://lists.debian.org/debian-lts-announce/2022/10/msg00021.html",
+          "https://security.gentoo.org/glsa/202107-07",
+          "https://security.netapp.com/advisory/ntap-20210304-0007/",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=27256",
+          "https://sourceware.org/git/?p=glibc.git;a=commit;h=7d88c6142c6efc160c0ee5e4f85cde382c072888",
+          "https://sourceware.org/pipermail/libc-alpha/2021-January/122058.html",
+          "https://ubuntu.com/security/notices/USN-5310-1",
+          "https://ubuntu.com/security/notices/USN-5699-1",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "https://www.oracle.com/security-alerts/cpujan2022.html"
+        ],
+        "PublishedDate": "2021-01-27T20:15:00Z",
+        "LastModifiedDate": "2022-11-04T20:07:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2016-10228",
+        "PkgName": "glibc-common",
+        "InstalledVersion": "2.28-164.0.5.el8_5.3",
+        "FixedVersion": "2:2.28-151.0.1.ksplice2.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-10228",
+        "Title": "glibc: iconv program can hang when invoked with the -c option",
+        "Description": "The iconv program in the GNU C Library (aka glibc or libc6) 2.31 and earlier, when invoked with multiple suffixes in the destination encoding (TRANSLATE or IGNORE) along with the -c option, enters an infinite loop when processing invalid multi-byte input sequences, leading to a denial of service.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 4.3,
+            "V3Score": 5.9
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+            "V3Score": 3.3
+          }
+        },
+        "References": [
+          "http://openwall.com/lists/oss-security/2017/03/01/10",
+          "http://www.securityfocus.com/bid/96525",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10228",
+          "https://linux.oracle.com/cve/CVE-2016-10228.html",
+          "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+          "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "https://lists.debian.org/debian-lts-announce/2022/10/msg00021.html",
+          "https://security.gentoo.org/glsa/202101-20",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=19519",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=19519#c21",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=26224",
+          "https://ubuntu.com/security/notices/USN-5310-1",
+          "https://ubuntu.com/security/notices/USN-5768-1",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        ],
+        "PublishedDate": "2017-03-02T01:59:00Z",
+        "LastModifiedDate": "2022-10-17T18:15:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2019-25013",
+        "PkgName": "glibc-common",
+        "InstalledVersion": "2.28-164.0.5.el8_5.3",
+        "FixedVersion": "2:2.28-151.0.1.ksplice2.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-25013",
+        "Title": "glibc: buffer over-read in iconv when processing invalid multi-byte input sequences in the EUC-KR encoding",
+        "Description": "The iconv feature in the GNU C Library (aka glibc or libc6) through 2.32, when processing invalid multi-byte input sequences in the EUC-KR encoding, may have a buffer over-read.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-125"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 7.1,
+            "V3Score": 5.9
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:N/I:N/A:H",
+            "V3Score": 4.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-25013",
+          "https://linux.oracle.com/cve/CVE-2019-25013.html",
+          "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+          "https://lists.apache.org/thread.html/r32d767ac804e9b8aad4355bb85960a6a1385eab7afff549a5e98660f@%3Cjira.kafka.apache.org%3E",
+          "https://lists.apache.org/thread.html/r448bb851cc8e6e3f93f3c28c70032b37062625d81214744474ac49e7@%3Cdev.kafka.apache.org%3E",
+          "https://lists.apache.org/thread.html/r4806a391091e082bdea17266452ca656ebc176e51bb3932733b3a0a2@%3Cjira.kafka.apache.org%3E",
+          "https://lists.apache.org/thread.html/r499e4f96d0b5109ef083f2feccd33c51650c1b7d7068aa3bd47efca9@%3Cjira.kafka.apache.org%3E",
+          "https://lists.apache.org/thread.html/r5af4430421bb6f9973294691a7904bbd260937e9eef96b20556f43ff@%3Cjira.kafka.apache.org%3E",
+          "https://lists.apache.org/thread.html/r750eee18542bc02bd8350861c424ee60a9b9b225568fa09436a37ece@%3Cissues.zookeeper.apache.org%3E",
+          "https://lists.apache.org/thread.html/r7a2e94adfe0a2f0a1d42e4927e8c32ecac97d37db9cb68095fe9ddbc@%3Cdev.zookeeper.apache.org%3E",
+          "https://lists.apache.org/thread.html/rd2354f9ccce41e494fbadcbc5ad87218de6ec0fff8a7b54c8462226c@%3Cissues.zookeeper.apache.org%3E",
+          "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "https://lists.debian.org/debian-lts-announce/2022/10/msg00021.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4Y6TX47P47KABSFOL26FLDNVCWXDKDEZ/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TVCUNLQ3HXGS4VPUQKWTJGRAW2KTFGXS/",
+          "https://security.gentoo.org/glsa/202107-07",
+          "https://security.netapp.com/advisory/ntap-20210205-0004/",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=24973",
+          "https://sourceware.org/git/?p=glibc.git;a=commit;h=ee7a3144c9922808181009b7b3e50e852fb4999b",
+          "https://ubuntu.com/security/notices/USN-5310-1",
+          "https://ubuntu.com/security/notices/USN-5768-1",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        ],
+        "PublishedDate": "2021-01-04T18:15:00Z",
+        "LastModifiedDate": "2022-11-03T19:37:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-27618",
+        "PkgName": "glibc-common",
+        "InstalledVersion": "2.28-164.0.5.el8_5.3",
+        "FixedVersion": "2:2.28-151.0.1.ksplice2.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-27618",
+        "Title": "glibc: iconv when processing invalid multi-byte input sequences fails to advance the input state, which could result in an infinite loop",
+        "Description": "The iconv function in the GNU C Library (aka glibc or libc6) 2.32 and earlier, when processing invalid multi-byte input sequences in IBM1364, IBM1371, IBM1388, IBM1390, and IBM1399 encodings, fails to advance the input state, which could lead to an infinite loop in applications, resulting in a denial of service, a different vulnerability from CVE-2016-10228.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-835"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 2.1,
+            "V3Score": 5.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 5.5
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27618",
+          "https://linux.oracle.com/cve/CVE-2020-27618.html",
+          "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+          "https://lists.debian.org/debian-lts-announce/2022/10/msg00021.html",
+          "https://security.gentoo.org/glsa/202107-07",
+          "https://security.netapp.com/advisory/ntap-20210401-0006/",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=19519#c21",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=26224",
+          "https://ubuntu.com/security/notices/USN-5310-1",
+          "https://ubuntu.com/security/notices/USN-5768-1",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "https://www.oracle.com/security-alerts/cpujan2022.html"
+        ],
+        "PublishedDate": "2021-02-26T23:15:00Z",
+        "LastModifiedDate": "2022-10-28T20:06:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2019-9169",
+        "PkgName": "glibc-minimal-langpack",
+        "InstalledVersion": "2.28-164.0.5.el8_5.3",
+        "FixedVersion": "2:2.28-151.0.1.ksplice2.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-9169",
+        "Title": "glibc: regular-expression match via proceed_next_node in posix/regexec.c leads to heap-based buffer over-read",
+        "Description": "In the GNU C Library (aka glibc or libc6) through 2.29, proceed_next_node in posix/regexec.c has a heap-based buffer over-read via an attempted case-insensitive regular-expression match.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-125"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L",
+            "V3Score": 6.5
+          }
+        },
+        "References": [
+          "http://www.securityfocus.com/bid/107160",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9169",
+          "https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34140",
+          "https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34142",
+          "https://kc.mcafee.com/corporate/index?page=content\u0026id=SB10278",
+          "https://linux.oracle.com/cve/CVE-2019-9169.html",
+          "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+          "https://security.gentoo.org/glsa/202006-04",
+          "https://security.netapp.com/advisory/ntap-20190315-0002/",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=24114",
+          "https://sourceware.org/git/gitweb.cgi?p=glibc.git;a=commit;h=583dd860d5b833037175247230a328f0050dbfe9",
+          "https://support.f5.com/csp/article/K54823184",
+          "https://ubuntu.com/security/notices/USN-4416-1",
+          "https://usn.ubuntu.com/4416-1/",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        ],
+        "PublishedDate": "2019-02-26T02:29:00Z",
+        "LastModifiedDate": "2022-06-13T18:59:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-3326",
+        "PkgName": "glibc-minimal-langpack",
+        "InstalledVersion": "2.28-164.0.5.el8_5.3",
+        "FixedVersion": "2:2.28-151.0.1.ksplice2.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3326",
+        "Title": "glibc: Assertion failure in ISO-2022-JP-3 gconv module related to combining characters",
+        "Description": "The iconv function in the GNU C Library (aka glibc or libc6) 2.32 and earlier, when processing invalid input sequences in the ISO-2022-JP-3 encoding, fails an assertion in the code path and aborts the program, potentially resulting in a denial of service.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-617"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "http://www.openwall.com/lists/oss-security/2021/01/28/2",
+          "https://bugs.chromium.org/p/project-zero/issues/detail?id=2146",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3326",
+          "https://linux.oracle.com/cve/CVE-2021-3326.html",
+          "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+          "https://lists.debian.org/debian-lts-announce/2022/10/msg00021.html",
+          "https://security.gentoo.org/glsa/202107-07",
+          "https://security.netapp.com/advisory/ntap-20210304-0007/",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=27256",
+          "https://sourceware.org/git/?p=glibc.git;a=commit;h=7d88c6142c6efc160c0ee5e4f85cde382c072888",
+          "https://sourceware.org/pipermail/libc-alpha/2021-January/122058.html",
+          "https://ubuntu.com/security/notices/USN-5310-1",
+          "https://ubuntu.com/security/notices/USN-5699-1",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "https://www.oracle.com/security-alerts/cpujan2022.html"
+        ],
+        "PublishedDate": "2021-01-27T20:15:00Z",
+        "LastModifiedDate": "2022-11-04T20:07:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2016-10228",
+        "PkgName": "glibc-minimal-langpack",
+        "InstalledVersion": "2.28-164.0.5.el8_5.3",
+        "FixedVersion": "2:2.28-151.0.1.ksplice2.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-10228",
+        "Title": "glibc: iconv program can hang when invoked with the -c option",
+        "Description": "The iconv program in the GNU C Library (aka glibc or libc6) 2.31 and earlier, when invoked with multiple suffixes in the destination encoding (TRANSLATE or IGNORE) along with the -c option, enters an infinite loop when processing invalid multi-byte input sequences, leading to a denial of service.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 4.3,
+            "V3Score": 5.9
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+            "V3Score": 3.3
+          }
+        },
+        "References": [
+          "http://openwall.com/lists/oss-security/2017/03/01/10",
+          "http://www.securityfocus.com/bid/96525",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10228",
+          "https://linux.oracle.com/cve/CVE-2016-10228.html",
+          "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+          "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "https://lists.debian.org/debian-lts-announce/2022/10/msg00021.html",
+          "https://security.gentoo.org/glsa/202101-20",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=19519",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=19519#c21",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=26224",
+          "https://ubuntu.com/security/notices/USN-5310-1",
+          "https://ubuntu.com/security/notices/USN-5768-1",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        ],
+        "PublishedDate": "2017-03-02T01:59:00Z",
+        "LastModifiedDate": "2022-10-17T18:15:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2019-25013",
+        "PkgName": "glibc-minimal-langpack",
+        "InstalledVersion": "2.28-164.0.5.el8_5.3",
+        "FixedVersion": "2:2.28-151.0.1.ksplice2.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-25013",
+        "Title": "glibc: buffer over-read in iconv when processing invalid multi-byte input sequences in the EUC-KR encoding",
+        "Description": "The iconv feature in the GNU C Library (aka glibc or libc6) through 2.32, when processing invalid multi-byte input sequences in the EUC-KR encoding, may have a buffer over-read.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-125"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 7.1,
+            "V3Score": 5.9
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:N/I:N/A:H",
+            "V3Score": 4.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-25013",
+          "https://linux.oracle.com/cve/CVE-2019-25013.html",
+          "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+          "https://lists.apache.org/thread.html/r32d767ac804e9b8aad4355bb85960a6a1385eab7afff549a5e98660f@%3Cjira.kafka.apache.org%3E",
+          "https://lists.apache.org/thread.html/r448bb851cc8e6e3f93f3c28c70032b37062625d81214744474ac49e7@%3Cdev.kafka.apache.org%3E",
+          "https://lists.apache.org/thread.html/r4806a391091e082bdea17266452ca656ebc176e51bb3932733b3a0a2@%3Cjira.kafka.apache.org%3E",
+          "https://lists.apache.org/thread.html/r499e4f96d0b5109ef083f2feccd33c51650c1b7d7068aa3bd47efca9@%3Cjira.kafka.apache.org%3E",
+          "https://lists.apache.org/thread.html/r5af4430421bb6f9973294691a7904bbd260937e9eef96b20556f43ff@%3Cjira.kafka.apache.org%3E",
+          "https://lists.apache.org/thread.html/r750eee18542bc02bd8350861c424ee60a9b9b225568fa09436a37ece@%3Cissues.zookeeper.apache.org%3E",
+          "https://lists.apache.org/thread.html/r7a2e94adfe0a2f0a1d42e4927e8c32ecac97d37db9cb68095fe9ddbc@%3Cdev.zookeeper.apache.org%3E",
+          "https://lists.apache.org/thread.html/rd2354f9ccce41e494fbadcbc5ad87218de6ec0fff8a7b54c8462226c@%3Cissues.zookeeper.apache.org%3E",
+          "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "https://lists.debian.org/debian-lts-announce/2022/10/msg00021.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4Y6TX47P47KABSFOL26FLDNVCWXDKDEZ/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TVCUNLQ3HXGS4VPUQKWTJGRAW2KTFGXS/",
+          "https://security.gentoo.org/glsa/202107-07",
+          "https://security.netapp.com/advisory/ntap-20210205-0004/",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=24973",
+          "https://sourceware.org/git/?p=glibc.git;a=commit;h=ee7a3144c9922808181009b7b3e50e852fb4999b",
+          "https://ubuntu.com/security/notices/USN-5310-1",
+          "https://ubuntu.com/security/notices/USN-5768-1",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        ],
+        "PublishedDate": "2021-01-04T18:15:00Z",
+        "LastModifiedDate": "2022-11-03T19:37:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-27618",
+        "PkgName": "glibc-minimal-langpack",
+        "InstalledVersion": "2.28-164.0.5.el8_5.3",
+        "FixedVersion": "2:2.28-151.0.1.ksplice2.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-27618",
+        "Title": "glibc: iconv when processing invalid multi-byte input sequences fails to advance the input state, which could result in an infinite loop",
+        "Description": "The iconv function in the GNU C Library (aka glibc or libc6) 2.32 and earlier, when processing invalid multi-byte input sequences in IBM1364, IBM1371, IBM1388, IBM1390, and IBM1399 encodings, fails to advance the input state, which could lead to an infinite loop in applications, resulting in a denial of service, a different vulnerability from CVE-2016-10228.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-835"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 2.1,
+            "V3Score": 5.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 5.5
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27618",
+          "https://linux.oracle.com/cve/CVE-2020-27618.html",
+          "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+          "https://lists.debian.org/debian-lts-announce/2022/10/msg00021.html",
+          "https://security.gentoo.org/glsa/202107-07",
+          "https://security.netapp.com/advisory/ntap-20210401-0006/",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=19519#c21",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=26224",
+          "https://ubuntu.com/security/notices/USN-5310-1",
+          "https://ubuntu.com/security/notices/USN-5768-1",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "https://www.oracle.com/security-alerts/cpujan2022.html"
+        ],
+        "PublishedDate": "2021-02-26T23:15:00Z",
+        "LastModifiedDate": "2022-10-28T20:06:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-34903",
+        "PkgName": "gnupg2",
+        "InstalledVersion": "2.2.20-2.el8",
+        "FixedVersion": "2.2.20-3.el8_6",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-34903",
+        "Title": "gpg: Signature spoofing via status line injection",
+        "Description": "GnuPG through 2.3.6, in unusual situations where an attacker possesses any secret-key information from a victim's keyring and other constraints (e.g., use of GPGME) are met, allows signature forgery via injection into the status line.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-74"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N",
+            "V2Score": 5.8,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+            "V3Score": 5.9
+          }
+        },
+        "References": [
+          "http://www.openwall.com/lists/oss-security/2022/07/02/1",
+          "https://bugs.debian.org/1014157",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-34903",
+          "https://dev.gnupg.org/T6027",
+          "https://linux.oracle.com/cve/CVE-2022-34903.html",
+          "https://linux.oracle.com/errata/ELSA-2022-6602.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FRLWJQ76A4UKHI3Q36BKSJKS4LFLQO33/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NPTAR76EIZY7NQFENSOZO7U473257OVZ/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VN63GBTMRWO36Y7BKA2WQHROAKCXKCBL/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VU64FUVG2PRZBSHFOQRSP7KDVEIZ23OS/",
+          "https://security.netapp.com/advisory/ntap-20220826-0005/",
+          "https://ubuntu.com/security/notices/USN-5503-1",
+          "https://ubuntu.com/security/notices/USN-5503-2",
+          "https://www.debian.org/security/2022/dsa-5174",
+          "https://www.openwall.com/lists/oss-security/2022/06/30/1"
+        ],
+        "PublishedDate": "2022-07-01T22:15:00Z",
+        "LastModifiedDate": "2022-09-09T20:40:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-20231",
+        "PkgName": "gnutls",
+        "InstalledVersion": "3.6.16-4.el8",
+        "FixedVersion": "10:3.6.16-4.0.1.el8_fips",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-20231",
+        "Title": "gnutls: Use after free in client key_share extension",
+        "Description": "A flaw was found in gnutls. A use after free issue in client sending key_share extension may lead to memory corruption and other consequences.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-416"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 3.7
+          }
+        },
+        "References": [
+          "https://bugzilla.redhat.com/show_bug.cgi?id=1922276",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20231",
+          "https://gitlab.com/gnutls/gnutls/-/issues/1151",
+          "https://linux.oracle.com/cve/CVE-2021-20231.html",
+          "https://linux.oracle.com/errata/ELSA-2022-9221.html",
+          "https://lists.apache.org/thread.html/r50661d6f0082709aad9a584431b59ec364f9974b63b07e0800230168@%3Cissues.spark.apache.org%3E",
+          "https://lists.apache.org/thread.html/r5d4001031e7790d8c6396c499522b4ed2aab782da87b1a14184793bb@%3Cissues.spark.apache.org%3E",
+          "https://lists.apache.org/thread.html/r5f88bed447742fcc5c47bf1c7be965ef450131914a6e1f85feba2779@%3Cissues.spark.apache.org%3E",
+          "https://lists.apache.org/thread.html/r6ac143ba6dd98bd4bf6bf010d46e56e254056459721ba18822d611f7@%3Cissues.spark.apache.org%3E",
+          "https://lists.apache.org/thread.html/r9cbc69e57276413788e90a6ee16c7c034ea4258d31935b70db2bd158@%3Cissues.spark.apache.org%3E",
+          "https://lists.apache.org/thread.html/rcd70a4c88a47a75fd2d5f3ffb7cee8c2a18c713320bd90fdcb57495f@%3Cissues.spark.apache.org%3E",
+          "https://lists.apache.org/thread.html/rf5e1256d870193def4a82ad89ab95e63943a313b5ff0d81aa87e4532@%3Cissues.spark.apache.org%3E",
+          "https://lists.apache.org/thread.html/rfd5273d72d244178441e6904a2f2b41a3268f569e8092ea0b3b2bb20@%3Cissues.spark.apache.org%3E",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OSLAE6PP33A7VYRYMYMUVB3U6B26GZER/",
+          "https://security.netapp.com/advisory/ntap-20210416-0005/",
+          "https://ubuntu.com/security/notices/USN-5029-1",
+          "https://www.gnutls.org/security-new.html#GNUTLS-SA-2021-03-10"
+        ],
+        "PublishedDate": "2021-03-12T19:15:00Z",
+        "LastModifiedDate": "2021-06-01T14:07:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-20232",
+        "PkgName": "gnutls",
+        "InstalledVersion": "3.6.16-4.el8",
+        "FixedVersion": "10:3.6.16-4.0.1.el8_fips",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-20232",
+        "Title": "gnutls: Use after free in client_send_params in lib/ext/pre_shared_key.c",
+        "Description": "A flaw was found in gnutls. A use after free issue in client_send_params in lib/ext/pre_shared_key.c may lead to memory corruption and other potential consequences.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-416"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 3.7
+          }
+        },
+        "References": [
+          "https://bugzilla.redhat.com/show_bug.cgi?id=1922275",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20232",
+          "https://gitlab.com/gnutls/gnutls/-/issues/1151",
+          "https://linux.oracle.com/cve/CVE-2021-20232.html",
+          "https://linux.oracle.com/errata/ELSA-2022-9221.html",
+          "https://lists.apache.org/thread.html/r50661d6f0082709aad9a584431b59ec364f9974b63b07e0800230168@%3Cissues.spark.apache.org%3E",
+          "https://lists.apache.org/thread.html/r5d4001031e7790d8c6396c499522b4ed2aab782da87b1a14184793bb@%3Cissues.spark.apache.org%3E",
+          "https://lists.apache.org/thread.html/r5f88bed447742fcc5c47bf1c7be965ef450131914a6e1f85feba2779@%3Cissues.spark.apache.org%3E",
+          "https://lists.apache.org/thread.html/r6ac143ba6dd98bd4bf6bf010d46e56e254056459721ba18822d611f7@%3Cissues.spark.apache.org%3E",
+          "https://lists.apache.org/thread.html/r9cbc69e57276413788e90a6ee16c7c034ea4258d31935b70db2bd158@%3Cissues.spark.apache.org%3E",
+          "https://lists.apache.org/thread.html/rcd70a4c88a47a75fd2d5f3ffb7cee8c2a18c713320bd90fdcb57495f@%3Cissues.spark.apache.org%3E",
+          "https://lists.apache.org/thread.html/rf5e1256d870193def4a82ad89ab95e63943a313b5ff0d81aa87e4532@%3Cissues.spark.apache.org%3E",
+          "https://lists.apache.org/thread.html/rfd5273d72d244178441e6904a2f2b41a3268f569e8092ea0b3b2bb20@%3Cissues.spark.apache.org%3E",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OSLAE6PP33A7VYRYMYMUVB3U6B26GZER/",
+          "https://security.netapp.com/advisory/ntap-20210416-0005/",
+          "https://ubuntu.com/security/notices/USN-5029-1",
+          "https://www.gnutls.org/security-new.html#GNUTLS-SA-2021-03-10"
+        ],
+        "PublishedDate": "2021-03-12T19:15:00Z",
+        "LastModifiedDate": "2021-05-17T14:30:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-3580",
+        "PkgName": "gnutls",
+        "InstalledVersion": "3.6.16-4.el8",
+        "FixedVersion": "10:3.6.16-4.0.1.el8_fips",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3580",
+        "Title": "nettle: Remote crash in RSA decryption via manipulated ciphertext",
+        "Description": "A flaw was found in the way nettle's RSA decryption functions handled specially crafted ciphertext. An attacker could use this flaw to provide a manipulated ciphertext leading to application crash and denial of service.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://bugzilla.redhat.com/show_bug.cgi?id=1967983",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3580",
+          "https://linux.oracle.com/cve/CVE-2021-3580.html",
+          "https://linux.oracle.com/errata/ELSA-2022-9221.html",
+          "https://lists.debian.org/debian-lts-announce/2021/09/msg00008.html",
+          "https://security.netapp.com/advisory/ntap-20211104-0006/",
+          "https://ubuntu.com/security/notices/USN-4990-1"
+        ],
+        "PublishedDate": "2021-08-05T21:15:00Z",
+        "LastModifiedDate": "2021-11-26T21:06:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-2509",
+        "PkgName": "gnutls",
+        "InstalledVersion": "3.6.16-4.el8",
+        "FixedVersion": "3.6.16-5.el8_6",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-2509",
+        "Title": "gnutls: Double free during gnutls_pkcs7_verify",
+        "Description": "A vulnerability found in gnutls. This security flaw happens because of a double free error occurs during verification of pkcs7 signatures in gnutls_pkcs7_verify function.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-415"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://access.redhat.com/security/cve/CVE-2022-2509",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2509",
+          "https://gnutls.org/security-new.html (GNUTLS-SA-2022-07-07)",
+          "https://gnutls.org/security-new.html#GNUTLS-SA-2022-07-07",
+          "https://linux.oracle.com/cve/CVE-2022-2509.html",
+          "https://linux.oracle.com/errata/ELSA-2022-7105.html",
+          "https://lists.debian.org/debian-lts-announce/2022/08/msg00002.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6FL27JS3VM74YEQU7PGB62USO3KSBYZX/",
+          "https://lists.gnupg.org/pipermail/gnutls-help/2022-July/004746.html",
+          "https://ubuntu.com/security/notices/USN-5550-1",
+          "https://www.debian.org/security/2022/dsa-5203"
+        ],
+        "PublishedDate": "2022-08-01T14:15:00Z",
+        "LastModifiedDate": "2022-08-19T12:10:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-1304",
+        "PkgName": "libcom_err",
+        "InstalledVersion": "1.45.6-2.el8",
+        "FixedVersion": "1.45.6-5.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1304",
+        "Title": "e2fsprogs: out-of-bounds read/write via crafted filesystem",
+        "Description": "An out-of-bounds read/write vulnerability was found in e2fsprogs. This issue leads to a segmentation fault and possibly arbitrary code execution via a specially crafted filesystem.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-125",
+          "CWE-787"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V2Score": 6.8,
+            "V3Score": 7.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:H",
+            "V3Score": 5.8
+          }
+        },
+        "References": [
+          "https://access.redhat.com/errata/RHSA-2022:7720",
+          "https://access.redhat.com/errata/RHSA-2022:8361",
+          "https://access.redhat.com/security/cve/CVE-2022-1304",
+          "https://bugzilla.redhat.com/show_bug.cgi?id=2069726",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1304",
+          "https://linux.oracle.com/cve/CVE-2022-1304.html",
+          "https://linux.oracle.com/errata/ELSA-2022-8361.html",
+          "https://marc.info/?l=linux-ext4\u0026m=165056234501732\u0026w=2",
+          "https://ubuntu.com/security/notices/USN-5464-1"
+        ],
+        "PublishedDate": "2022-04-14T21:15:00Z",
+        "LastModifiedDate": "2023-02-02T21:22:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-22576",
+        "PkgName": "libcurl",
+        "InstalledVersion": "7.61.1-22.el8",
+        "FixedVersion": "7.61.1-22.el8_6.3",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22576",
+        "Title": "curl: OAUTH2 bearer bypass in connection re-use",
+        "Description": "An improper authentication vulnerability exists in curl 7.33.0 to and including 7.82.0 which might allow reuse OAUTH2-authenticated connections without properly making sure that the connection was authenticated with the same credentials as set for this transfer. This affects SASL-enabled protocols: SMPTP(S), IMAP(S), POP3(S) and LDAP(S) (openldap only).",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-287"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+            "V2Score": 5.5,
+            "V3Score": 8.1
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+            "V3Score": 8.1
+          }
+        },
+        "References": [
+          "https://curl.se/docs/CVE-2022-22576.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22576",
+          "https://hackerone.com/reports/1526328",
+          "https://linux.oracle.com/cve/CVE-2022-22576.html",
+          "https://linux.oracle.com/errata/ELSA-2022-5313.html",
+          "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+          "https://security.gentoo.org/glsa/202212-01",
+          "https://security.netapp.com/advisory/ntap-20220609-0008/",
+          "https://ubuntu.com/security/notices/USN-5397-1",
+          "https://www.debian.org/security/2022/dsa-5197"
+        ],
+        "PublishedDate": "2022-05-26T17:15:00Z",
+        "LastModifiedDate": "2023-01-05T18:10:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-27782",
+        "PkgName": "libcurl",
+        "InstalledVersion": "7.61.1-22.el8",
+        "FixedVersion": "7.61.1-22.el8_6.3",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-27782",
+        "Title": "curl: TLS and SSH connection too eager reuse",
+        "Description": "libcurl would reuse a previously created connection even when a TLS or SSHrelated option had been changed that should have prohibited reuse.libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse if one of them matches the setup. However, several TLS andSSH settings were left out from the configuration match checks, making themmatch too easily.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-295"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://curl.se/docs/CVE-2022-27782.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27782",
+          "https://hackerone.com/reports/1555796",
+          "https://linux.oracle.com/cve/CVE-2022-27782.html",
+          "https://linux.oracle.com/errata/ELSA-2022-5313.html",
+          "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+          "https://security.gentoo.org/glsa/202212-01",
+          "https://security.netapp.com/advisory/ntap-20220609-0009/",
+          "https://ubuntu.com/security/notices/USN-5412-1",
+          "https://www.debian.org/security/2022/dsa-5197"
+        ],
+        "PublishedDate": "2022-06-02T14:15:00Z",
+        "LastModifiedDate": "2023-01-05T17:51:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-27774",
+        "PkgName": "libcurl",
+        "InstalledVersion": "7.61.1-22.el8",
+        "FixedVersion": "7.61.1-22.el8_6.3",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-27774",
+        "Title": "curl: credential leak on redirect",
+        "Description": "An insufficiently protected credentials vulnerability exists in curl 4.9 to and include curl 7.82.0 are affected that could allow an attacker to extract credentials when follows HTTP(S) redirects is used with authentication could leak credentials to other services that exist on different protocols or port numbers.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-522"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:S/C:P/I:N/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N",
+            "V2Score": 3.5,
+            "V3Score": 5.7
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L",
+            "V3Score": 5
+          }
+        },
+        "References": [
+          "https://curl.se/docs/CVE-2022-27774.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27774",
+          "https://hackerone.com/reports/1543773",
+          "https://linux.oracle.com/cve/CVE-2022-27774.html",
+          "https://linux.oracle.com/errata/ELSA-2022-5313.html",
+          "https://lists.debian.org/debian-lts-announce/2023/01/msg00028.html",
+          "https://security.gentoo.org/glsa/202212-01",
+          "https://security.netapp.com/advisory/ntap-20220609-0008/",
+          "https://ubuntu.com/security/notices/USN-5397-1",
+          "https://www.debian.org/security/2022/dsa-5197"
+        ],
+        "PublishedDate": "2022-06-02T14:15:00Z",
+        "LastModifiedDate": "2023-01-29T00:15:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-27776",
+        "PkgName": "libcurl",
+        "InstalledVersion": "7.61.1-22.el8",
+        "FixedVersion": "7.61.1-22.el8_6.3",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-27776",
+        "Title": "curl: auth/cookie leak on redirect",
+        "Description": "A insufficiently protected credentials vulnerability in fixed in curl 7.83.0 might leak authentication or cookie header data on HTTP redirects to the same host but another port number.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-522"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+            "V2Score": 4.3,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+            "V3Score": 4.3
+          }
+        },
+        "References": [
+          "https://curl.se/docs/CVE-2022-27776.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27776",
+          "https://hackerone.com/reports/1547048",
+          "https://linux.oracle.com/cve/CVE-2022-27776.html",
+          "https://linux.oracle.com/errata/ELSA-2022-5313.html",
+          "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7N5ZBWLNNPZKFK7Q4KEHGCJ2YELQEUJP/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DKKOQXPYLMBSEVDHFS32BPBR3ZQJKY5B/",
+          "https://security.gentoo.org/glsa/202212-01",
+          "https://security.netapp.com/advisory/ntap-20220609-0008/",
+          "https://ubuntu.com/security/notices/USN-5397-1",
+          "https://www.debian.org/security/2022/dsa-5197"
+        ],
+        "PublishedDate": "2022-06-02T14:15:00Z",
+        "LastModifiedDate": "2023-01-05T18:06:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-32206",
+        "PkgName": "libcurl",
+        "InstalledVersion": "7.61.1-22.el8",
+        "FixedVersion": "7.61.1-22.el8_6.4",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32206",
+        "Title": "curl: HTTP compression denial of service",
+        "Description": "curl \u003c 7.84.0 supports \"chained\" HTTP compression algorithms, meaning that a serverresponse can be compressed multiple times and potentially with different algorithms. The number of acceptable \"links\" in this \"decompression chain\" was unbounded, allowing a malicious server to insert a virtually unlimited number of compression steps.The use of such a decompression chain could result in a \"malloc bomb\", makingcurl end up spending enormous amounts of allocated heap memory, or trying toand returning out of memory errors.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-770"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+            "V2Score": 4.3,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+            "V3Score": 6.5
+          }
+        },
+        "References": [
+          "http://seclists.org/fulldisclosure/2022/Oct/28",
+          "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "https://cert-portal.siemens.com/productcert/pdf/ssa-333517.pdf",
+          "https://curl.se/docs/CVE-2022-32206.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32206",
+          "https://hackerone.com/reports/1570651",
+          "https://linux.oracle.com/cve/CVE-2022-32206.html",
+          "https://linux.oracle.com/errata/ELSA-2022-6159.html",
+          "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+          "https://security.gentoo.org/glsa/202212-01",
+          "https://security.netapp.com/advisory/ntap-20220915-0003/",
+          "https://support.apple.com/kb/HT213488",
+          "https://ubuntu.com/security/notices/USN-5495-1",
+          "https://www.debian.org/security/2022/dsa-5197"
+        ],
+        "PublishedDate": "2022-07-07T13:15:00Z",
+        "LastModifiedDate": "2023-01-05T17:46:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-32208",
+        "PkgName": "libcurl",
+        "InstalledVersion": "7.61.1-22.el8",
+        "FixedVersion": "7.61.1-22.el8_6.4",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32208",
+        "Title": "curl: FTP-KRB bad message verification",
+        "Description": "When curl \u003c 7.84.0 does FTP transfers secured by krb5, it handles message verification failures wrongly. This flaw makes it possible for a Man-In-The-Middle attack to go unnoticed and even allows it to inject data to the client.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-787"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "V2Score": 4.3,
+            "V3Score": 5.9
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "http://seclists.org/fulldisclosure/2022/Oct/28",
+          "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "https://curl.se/docs/CVE-2022-32208.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32208",
+          "https://hackerone.com/reports/1590071",
+          "https://linux.oracle.com/cve/CVE-2022-32208.html",
+          "https://linux.oracle.com/errata/ELSA-2022-6159.html",
+          "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+          "https://security.gentoo.org/glsa/202212-01",
+          "https://security.netapp.com/advisory/ntap-20220915-0003/",
+          "https://support.apple.com/kb/HT213488",
+          "https://ubuntu.com/security/notices/USN-5495-1",
+          "https://ubuntu.com/security/notices/USN-5499-1",
+          "https://www.debian.org/security/2022/dsa-5197"
+        ],
+        "PublishedDate": "2022-07-07T13:15:00Z",
+        "LastModifiedDate": "2023-01-05T17:43:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-33560",
+        "PkgName": "libgcrypt",
+        "InstalledVersion": "1.8.5-6.el8",
+        "FixedVersion": "10:1.8.5-6.el8_fips",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-33560",
+        "Title": "libgcrypt: mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm",
+        "Description": "Libgcrypt before 1.8.8 and 1.9.x before 1.9.3 mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm, and the window size is not chosen appropriately. This, for example, affects use of ElGamal in OpenPGP.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-203"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33560",
+          "https://dev.gnupg.org/T5305",
+          "https://dev.gnupg.org/T5328",
+          "https://dev.gnupg.org/T5466",
+          "https://dev.gnupg.org/rCe8b7f10be275bcedb5fc05ed4837a89bfd605c61",
+          "https://eprint.iacr.org/2021/923",
+          "https://linux.oracle.com/cve/CVE-2021-33560.html",
+          "https://linux.oracle.com/errata/ELSA-2022-9263.html",
+          "https://lists.debian.org/debian-lts-announce/2021/06/msg00021.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BKKTOIGFW2SGN3DO2UHHVZ7MJSYN4AAB/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R7OAPCUGPF3VLA7QAJUQSL255D4ITVTL/",
+          "https://security.gentoo.org/glsa/202210-13",
+          "https://ubuntu.com/security/notices/USN-5080-1",
+          "https://ubuntu.com/security/notices/USN-5080-2",
+          "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "https://www.oracle.com/security-alerts/cpujan2022.html",
+          "https://www.oracle.com/security-alerts/cpujul2022.html",
+          "https://www.oracle.com/security-alerts/cpuoct2021.html"
+        ],
+        "PublishedDate": "2021-06-08T11:15:00Z",
+        "LastModifiedDate": "2022-12-07T01:20:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-40528",
+        "PkgName": "libgcrypt",
+        "InstalledVersion": "1.8.5-6.el8",
+        "FixedVersion": "10:1.8.5-7.el8_6_fips",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-40528",
+        "Title": "libgcrypt: ElGamal implementation allows plaintext recovery",
+        "Description": "The ElGamal implementation in Libgcrypt before 1.9.4 allows plaintext recovery because, during interaction between two cryptographic libraries, a certain dangerous combination of the prime defined by the receiver's public key, the generator defined by the receiver's public key, and the sender's ephemeral exponents can lead to a cross-configuration attack against OpenPGP.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-327"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "V2Score": 2.6,
+            "V3Score": 5.9
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "V3Score": 5.9
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-40528",
+          "https://dev.gnupg.org/rCb118681ebc4c9ea4b9da79b0f9541405a64f4c13",
+          "https://eprint.iacr.org/2021/923",
+          "https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libgcrypt.git;a=commit;h=3462280f2e23e16adf3ed5176e0f2413d8861320",
+          "https://ibm.github.io/system-security-research-updates/2021/07/20/insecurity-elgamal-pt1",
+          "https://ibm.github.io/system-security-research-updates/2021/09/06/insecurity-elgamal-pt2",
+          "https://linux.oracle.com/cve/CVE-2021-40528.html",
+          "https://linux.oracle.com/errata/ELSA-2022-9564.html",
+          "https://security.gentoo.org/glsa/202210-13",
+          "https://ubuntu.com/security/notices/USN-5080-1",
+          "https://ubuntu.com/security/notices/USN-5080-2"
+        ],
+        "PublishedDate": "2021-09-06T19:15:00Z",
+        "LastModifiedDate": "2022-12-07T01:36:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-3515",
+        "PkgName": "libksba",
+        "InstalledVersion": "1.3.5-7.el8",
+        "FixedVersion": "1.3.5-8.el8_6",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3515",
+        "Title": "libksba: integer overflow may lead to remote code execution",
+        "Description": "A vulnerability was found in the Libksba library due to an integer overflow within the CRL parser. The vulnerability can be exploited remotely for code execution on the target system by passing specially crafted data to the application, for example, a malicious S/MIME attachment.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-190"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 9.8
+          }
+        },
+        "References": [
+          "https://access.redhat.com/security/cve/CVE-2022-3515",
+          "https://bugzilla.redhat.com/show_bug.cgi?id=2135610",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3515",
+          "https://dev.gnupg.org/rK4b7d9cd4a018898d7714ce06f3faf2626c14582b",
+          "https://gnupg.org/blog/20221017-pepe-left-the-ksba.html",
+          "https://linux.oracle.com/cve/CVE-2022-3515.html",
+          "https://linux.oracle.com/errata/ELSA-2022-7090.html",
+          "https://ubuntu.com/security/notices/USN-5688-1",
+          "https://ubuntu.com/security/notices/USN-5688-2",
+          "https://www.gnupg.org/blog/20221017-pepe-left-the-ksba.html"
+        ],
+        "PublishedDate": "2023-01-12T15:15:00Z",
+        "LastModifiedDate": "2023-01-20T20:08:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-47629",
+        "PkgName": "libksba",
+        "InstalledVersion": "1.3.5-7.el8",
+        "FixedVersion": "1.3.5-9.el8_7",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-47629",
+        "Title": "libksba: integer overflow to code execution",
+        "Description": "Libksba before 1.6.3 is prone to an integer overflow vulnerability in the CRL signature parser.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-190"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 9.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-47629",
+          "https://dev.gnupg.org/T6284",
+          "https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libksba.git;a=commit;h=f61a5ea4e0f6a80fd4b28ef0174bee77793cf070",
+          "https://gnupg.org/blog/20221017-pepe-left-the-ksba.html",
+          "https://linux.oracle.com/cve/CVE-2022-47629.html",
+          "https://linux.oracle.com/errata/ELSA-2023-0626.html",
+          "https://lists.debian.org/debian-lts-announce/2022/12/msg00035.html",
+          "https://security.gentoo.org/glsa/202212-07",
+          "https://ubuntu.com/security/notices/USN-5787-1",
+          "https://ubuntu.com/security/notices/USN-5787-2",
+          "https://www.debian.org/security/2022/dsa-5305"
+        ],
+        "PublishedDate": "2022-12-20T23:15:00Z",
+        "LastModifiedDate": "2023-01-03T14:59:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-3634",
+        "PkgName": "libssh",
+        "InstalledVersion": "0.9.4-3.el8",
+        "FixedVersion": "0.9.6-3.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3634",
+        "Title": "libssh: possible heap-based buffer overflow when rekeying",
+        "Description": "A flaw has been found in libssh in versions prior to 0.9.6. The SSH protocol keeps track of two shared secrets during the lifetime of the session. One of them is called secret_hash and the other session_id. Initially, both of them are the same, but after key re-exchange, previous session_id is kept and used as an input to new secret_hash. Historically, both of these buffers had shared length variable, which worked as long as these buffers were same. But the key re-exchange operation can also change the key exchange method, which can be based on hash of different size, eventually creating \"secret_hash\" of different size than the session_id has. This becomes an issue when the session_id memory is zeroed or when it is used again during second key re-exchange.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-787"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 4,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:L",
+            "V3Score": 3.5
+          }
+        },
+        "References": [
+          "https://bugzilla.redhat.com/show_bug.cgi?id=1978810",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3634",
+          "https://linux.oracle.com/cve/CVE-2021-3634.html",
+          "https://linux.oracle.com/errata/ELSA-2022-2031.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DRK67AJCWYYVAGF5SGAHNZXCX3PN3ZFP/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JKYD3ZRAMDAQX3ZW6THHUF3GXN7FF6B4/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SVWAAB2XMKEUMPMDALINKAA4U2QM4LNG/",
+          "https://security.netapp.com/advisory/ntap-20211004-0003/",
+          "https://ubuntu.com/security/notices/USN-5053-1",
+          "https://www.debian.org/security/2021/dsa-4965",
+          "https://www.oracle.com/security-alerts/cpujan2022.html"
+        ],
+        "PublishedDate": "2021-08-31T17:15:00Z",
+        "LastModifiedDate": "2022-11-16T03:31:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-3634",
+        "PkgName": "libssh-config",
+        "InstalledVersion": "0.9.4-3.el8",
+        "FixedVersion": "0.9.6-3.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3634",
+        "Title": "libssh: possible heap-based buffer overflow when rekeying",
+        "Description": "A flaw has been found in libssh in versions prior to 0.9.6. The SSH protocol keeps track of two shared secrets during the lifetime of the session. One of them is called secret_hash and the other session_id. Initially, both of them are the same, but after key re-exchange, previous session_id is kept and used as an input to new secret_hash. Historically, both of these buffers had shared length variable, which worked as long as these buffers were same. But the key re-exchange operation can also change the key exchange method, which can be based on hash of different size, eventually creating \"secret_hash\" of different size than the session_id has. This becomes an issue when the session_id memory is zeroed or when it is used again during second key re-exchange.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-787"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 4,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:L",
+            "V3Score": 3.5
+          }
+        },
+        "References": [
+          "https://bugzilla.redhat.com/show_bug.cgi?id=1978810",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3634",
+          "https://linux.oracle.com/cve/CVE-2021-3634.html",
+          "https://linux.oracle.com/errata/ELSA-2022-2031.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DRK67AJCWYYVAGF5SGAHNZXCX3PN3ZFP/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JKYD3ZRAMDAQX3ZW6THHUF3GXN7FF6B4/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SVWAAB2XMKEUMPMDALINKAA4U2QM4LNG/",
+          "https://security.netapp.com/advisory/ntap-20211004-0003/",
+          "https://ubuntu.com/security/notices/USN-5053-1",
+          "https://www.debian.org/security/2021/dsa-4965",
+          "https://www.oracle.com/security-alerts/cpujan2022.html"
+        ],
+        "PublishedDate": "2021-08-31T17:15:00Z",
+        "LastModifiedDate": "2022-11-16T03:31:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-46848",
+        "PkgName": "libtasn1",
+        "InstalledVersion": "4.13-3.el8",
+        "FixedVersion": "4.13-4.el8_7",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-46848",
+        "Title": "libtasn1: Out-of-bound access in ETYPE_OK",
+        "Description": "GNU Libtasn1 before 4.19.0 has an ETYPE_OK off-by-one array size check that affects asn1_encode_simple_der.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-125"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+            "V3Score": 9.1
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 5.9
+          }
+        },
+        "References": [
+          "https://bugs.gentoo.org/866237",
+          "https://gitlab.com/gnutls/libtasn1/-/commit/44a700d2051a666235748970c2df047ff207aeb5",
+          "https://gitlab.com/gnutls/libtasn1/-/issues/32",
+          "https://linux.oracle.com/cve/CVE-2021-46848.html",
+          "https://linux.oracle.com/errata/ELSA-2023-0343.html",
+          "https://lists.debian.org/debian-lts-announce/2023/01/msg00003.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AV4SHDJF2XLB4CUPTBPQQ6CLGZ5LKXPZ/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ECM2ELTVRYV4BZ5L5GMIRQE27RFHPAQ6/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OGO7XST4EIJGX4B2ITZCYSWM24534BSU/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V5LWOGF7QRMNFRUCZY6TDYQJVFI6MOQ2/",
+          "https://security.netapp.com/advisory/ntap-20221118-0006/"
+        ],
+        "PublishedDate": "2022-10-24T14:15:00Z",
+        "LastModifiedDate": "2023-01-20T13:55:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-40303",
+        "PkgName": "libxml2",
+        "InstalledVersion": "2.9.7-12.el8_5",
+        "FixedVersion": "2.9.7-15.el8_7.1",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-40303",
+        "Title": "libxml2: integer overflows with XML_PARSE_HUGE",
+        "Description": "An issue was discovered in libxml2 before 2.10.3. When parsing a multi-gigabyte XML document with the XML_PARSE_HUGE parser option enabled, several integer counters can overflow. This results in an attempt to access an array at a negative 2GB offset, typically leading to a segmentation fault.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-190"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+            "V3Score": 8.2
+          }
+        },
+        "References": [
+          "http://seclists.org/fulldisclosure/2022/Dec/21",
+          "http://seclists.org/fulldisclosure/2022/Dec/24",
+          "http://seclists.org/fulldisclosure/2022/Dec/25",
+          "http://seclists.org/fulldisclosure/2022/Dec/26",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40303",
+          "https://gitlab.gnome.org/GNOME/libxml2/-/commit/c846986356fc149915a74972bf198abc266bc2c0",
+          "https://gitlab.gnome.org/GNOME/libxml2/-/tags/v2.10.3",
+          "https://linux.oracle.com/cve/CVE-2022-40303.html",
+          "https://linux.oracle.com/errata/ELSA-2023-0338.html",
+          "https://security.netapp.com/advisory/ntap-20221209-0003/",
+          "https://support.apple.com/kb/HT213531",
+          "https://support.apple.com/kb/HT213533",
+          "https://support.apple.com/kb/HT213534",
+          "https://support.apple.com/kb/HT213535",
+          "https://support.apple.com/kb/HT213536",
+          "https://ubuntu.com/security/notices/USN-5760-1",
+          "https://ubuntu.com/security/notices/USN-5760-2"
+        ],
+        "PublishedDate": "2022-11-23T00:15:00Z",
+        "LastModifiedDate": "2023-01-11T17:29:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-40304",
+        "PkgName": "libxml2",
+        "InstalledVersion": "2.9.7-12.el8_5",
+        "FixedVersion": "2.9.7-15.el8_7.1",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-40304",
+        "Title": "libxml2: dict corruption caused by entity reference cycles",
+        "Description": "An issue was discovered in libxml2 before 2.10.3. Certain invalid XML entity definitions can corrupt a hash table key, potentially leading to subsequent logic errors. In one case, a double-free can be provoked.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-611"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 7.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+            "V3Score": 8.2
+          }
+        },
+        "References": [
+          "http://seclists.org/fulldisclosure/2022/Dec/21",
+          "http://seclists.org/fulldisclosure/2022/Dec/24",
+          "http://seclists.org/fulldisclosure/2022/Dec/25",
+          "http://seclists.org/fulldisclosure/2022/Dec/26",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40304",
+          "https://gitlab.gnome.org/GNOME/libxml2/-/commit/1b41ec4e9433b05bb0376be4725804c54ef1d80b",
+          "https://gitlab.gnome.org/GNOME/libxml2/-/tags",
+          "https://gitlab.gnome.org/GNOME/libxml2/-/tags/v2.10.3",
+          "https://linux.oracle.com/cve/CVE-2022-40304.html",
+          "https://linux.oracle.com/errata/ELSA-2023-0338.html",
+          "https://security.netapp.com/advisory/ntap-20221209-0003/",
+          "https://support.apple.com/kb/HT213531",
+          "https://support.apple.com/kb/HT213533",
+          "https://support.apple.com/kb/HT213534",
+          "https://support.apple.com/kb/HT213535",
+          "https://support.apple.com/kb/HT213536",
+          "https://ubuntu.com/security/notices/USN-5760-1",
+          "https://ubuntu.com/security/notices/USN-5760-2"
+        ],
+        "PublishedDate": "2022-11-23T18:15:00Z",
+        "LastModifiedDate": "2023-01-31T20:14:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2016-3709",
+        "PkgName": "libxml2",
+        "InstalledVersion": "2.9.7-12.el8_5",
+        "FixedVersion": "2.9.7-15.el8",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-3709",
+        "Title": "libxml2: Incorrect server side include parsing can lead to XSS",
+        "Description": "Possible cross-site scripting vulnerability in libxml after commit 960f0e2.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-79"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+            "V3Score": 6.1
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+            "V3Score": 6.1
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3709",
+          "https://linux.oracle.com/cve/CVE-2016-3709.html",
+          "https://linux.oracle.com/errata/ELSA-2022-7715.html",
+          "https://mail.gnome.org/archives/xml/2018-January/msg00010.html",
+          "https://ubuntu.com/security/notices/USN-5548-1"
+        ],
+        "PublishedDate": "2022-07-28T17:15:00Z",
+        "LastModifiedDate": "2022-12-07T16:39:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-29824",
+        "PkgName": "libxml2",
+        "InstalledVersion": "2.9.7-12.el8_5",
+        "FixedVersion": "2.9.7-13.el8_6.1",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-29824",
+        "Title": "libxml2: integer overflows in xmlBuf and xmlBuffer lead to out-of-bounds write",
+        "Description": "In libxml2 before 2.9.14, several buffer handling functions in buf.c (xmlBuf*) and tree.c (xmlBuffer*) don't check for integer overflows. This can result in out-of-bounds memory writes. Exploitation requires a victim to open a crafted, multi-gigabyte XML file. Other software using libxml2's buffer functions, for example libxslt through 1.1.35, is affected as well.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-190"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+            "V2Score": 4.3,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H",
+            "V3Score": 7.4
+          }
+        },
+        "References": [
+          "http://packetstormsecurity.com/files/167345/libxml2-xmlBufAdd-Heap-Buffer-Overflow.html",
+          "http://packetstormsecurity.com/files/169825/libxml2-xmlParseNameComplex-Integer-Overflow.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29824",
+          "https://gitlab.gnome.org/GNOME/libxml2/-/commit/2554a2408e09f13652049e5ffb0d26196b02ebab",
+          "https://gitlab.gnome.org/GNOME/libxml2/-/commit/2554a2408e09f13652049e5ffb0d26196b02ebab (v2.9.14)",
+          "https://gitlab.gnome.org/GNOME/libxml2/-/commit/6c283d83eccd940bcde15634ac8c7f100e3caefd",
+          "https://gitlab.gnome.org/GNOME/libxml2/-/commit/6c283d83eccd940bcde15634ac8c7f100e3caefd (master)",
+          "https://gitlab.gnome.org/GNOME/libxml2/-/tags/v2.9.14",
+          "https://gitlab.gnome.org/GNOME/libxslt/-/tags",
+          "https://linux.oracle.com/cve/CVE-2022-29824.html",
+          "https://linux.oracle.com/errata/ELSA-2022-5317.html",
+          "https://lists.debian.org/debian-lts-announce/2022/05/msg00023.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FZOBT5Y6Y2QLDDX2HZGMV7MJMWGXORKK/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P3NVZVWFRBXBI3AKZZWUWY6INQQPQVSF/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P5363EDV5VHZ5C77ODA43RYDCPMA7ARM/",
+          "https://security.gentoo.org/glsa/202210-03",
+          "https://security.netapp.com/advisory/ntap-20220715-0006/",
+          "https://ubuntu.com/security/notices/USN-5422-1",
+          "https://www.debian.org/security/2022/dsa-5142",
+          "https://www.oracle.com/security-alerts/cpujul2022.html"
+        ],
+        "PublishedDate": "2022-05-03T03:15:00Z",
+        "LastModifiedDate": "2023-01-11T17:33:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-1586",
+        "PkgName": "pcre2",
+        "InstalledVersion": "10.32-2.el8",
+        "FixedVersion": "10.32-3.el8_6",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1586",
+        "Title": "pcre2: Out-of-bounds read in compile_xclass_matchingpath in pcre2_jit_compile.c",
+        "Description": "An out-of-bounds read vulnerability was discovered in the PCRE2 library in the compile_xclass_matchingpath() function of the pcre2_jit_compile.c file. This involves a unicode property matching issue in JIT-compiled regular expressions. The issue occurs because the character was not fully read in case-less matching within JIT.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-125"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+            "V2Score": 6.4,
+            "V3Score": 9.1
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://bugzilla.redhat.com/show_bug.cgi?id=2077976,",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1586",
+          "https://github.com/PCRE2Project/pcre2/commit/50a51cb7e67268e6ad417eb07c9de9bfea5cc55a,",
+          "https://github.com/PCRE2Project/pcre2/commit/d4fa336fbcc388f89095b184ba6d99422cfc676c",
+          "https://linux.oracle.com/cve/CVE-2022-1586.html",
+          "https://linux.oracle.com/errata/ELSA-2022-5809.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DWNG2NS3GINO6LQYUVC4BZLUQPJ3DYHA/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JXINO3KKI5DICQ45E2FKD6MKVMGJLEKJ/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KAX7767BCUFC7JMDGP7GOQ5GIZCAUGBB/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M2GLQQUEY5VFM57CFYXVIFOXN2HUZPDM/",
+          "https://security.netapp.com/advisory/ntap-20221028-0009/",
+          "https://ubuntu.com/security/notices/USN-5627-1",
+          "https://ubuntu.com/security/notices/USN-5627-2"
+        ],
+        "PublishedDate": "2022-05-16T21:15:00Z",
+        "LastModifiedDate": "2022-12-07T02:56:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-35527",
+        "PkgName": "sqlite-libs",
+        "InstalledVersion": "3.26.0-15.el8",
+        "FixedVersion": "3.26.0-16.el8_6",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-35527",
+        "Title": "sqlite: Out of bounds access during table rename",
+        "Description": "In SQLite 3.31.1, there is an out of bounds access problem through ALTER TABLE for views that have a nested FROM clause.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-119"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 8.1
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35527",
+          "https://linux.oracle.com/cve/CVE-2020-35527.html",
+          "https://linux.oracle.com/errata/ELSA-2022-7108.html",
+          "https://security.netapp.com/advisory/ntap-20221111-0007/",
+          "https://ubuntu.com/security/notices/USN-5615-1",
+          "https://www.sqlite.org/src/info/c431b3fd8fd0f6a6"
+        ],
+        "PublishedDate": "2022-09-01T18:15:00Z",
+        "LastModifiedDate": "2022-12-08T22:29:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-35525",
+        "PkgName": "sqlite-libs",
+        "InstalledVersion": "3.26.0-15.el8",
+        "FixedVersion": "3.26.0-16.el8_6",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-35525",
+        "Title": "sqlite: Null pointer derreference in src/select.c",
+        "Description": "In SQlite 3.31.1, a potential null pointer derreference was found in the INTERSEC query processing.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-476"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35525",
+          "https://linux.oracle.com/cve/CVE-2020-35525.html",
+          "https://linux.oracle.com/errata/ELSA-2022-7108.html",
+          "https://ubuntu.com/security/notices/USN-5615-1",
+          "https://ubuntu.com/security/notices/USN-5615-2",
+          "https://www.sqlite.org/src/info/a67cf5b7d37d5b14"
+        ],
+        "PublishedDate": "2022-09-01T18:15:00Z",
+        "LastModifiedDate": "2022-09-07T17:47:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-35737",
+        "PkgName": "sqlite-libs",
+        "InstalledVersion": "3.26.0-15.el8",
+        "FixedVersion": "3.26.0-17.el8_7",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-35737",
+        "Title": "sqlite: an array-bounds overflow if billions of bytes are used in a string argument to a C API",
+        "Description": "SQLite 1.0.12 through 3.39.x before 3.39.2 sometimes allows an array-bounds overflow if billions of bytes are used in a string argument to a C API.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-129"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 5.9
+          }
+        },
+        "References": [
+          "https://blog.trailofbits.com/2022/10/25/sqlite-vulnerability-july-2022-library-api/",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-35737",
+          "https://kb.cert.org/vuls/id/720344",
+          "https://linux.oracle.com/cve/CVE-2022-35737.html",
+          "https://linux.oracle.com/errata/ELSA-2023-0339.html",
+          "https://security.gentoo.org/glsa/202210-40",
+          "https://security.netapp.com/advisory/ntap-20220915-0009/",
+          "https://sqlite.org/releaselog/3_39_2.html",
+          "https://ubuntu.com/security/notices/USN-5712-1",
+          "https://ubuntu.com/security/notices/USN-5716-1",
+          "https://ubuntu.com/security/notices/USN-5716-2",
+          "https://www.sqlite.org/cves.html",
+          "https://www.sqlite.org/releaselog/3_39_2.html"
+        ],
+        "PublishedDate": "2022-08-03T06:15:00Z",
+        "LastModifiedDate": "2022-11-16T20:01:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-2526",
+        "PkgName": "systemd-libs",
+        "InstalledVersion": "239-51.0.1.el8_5.5",
+        "FixedVersion": "239-58.0.1.el8_6.4",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-2526",
+        "Title": "systemd-resolved: use-after-free when dealing with DnsStream in resolved-dns-stream.c",
+        "Description": "A use-after-free vulnerability was found in systemd. This issue occurs due to the on_stream_io() function and dns_stream_complete() function in 'resolved-dns-stream.c' not incrementing the reference counting for the DnsStream object. Therefore, other functions and callbacks called can dereference the DNSStream object, causing the use-after-free when the reference is still used later.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-416"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 9.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2526",
+          "https://github.com/systemd/systemd/commit/d973d94dec349fb676fdd844f6fe2ada3538f27c",
+          "https://linux.oracle.com/cve/CVE-2022-2526.html",
+          "https://linux.oracle.com/errata/ELSA-2022-6206.html",
+          "https://security.netapp.com/advisory/ntap-20221111-0005/",
+          "https://ubuntu.com/security/notices/USN-5583-1",
+          "https://ubuntu.com/security/notices/USN-5583-2"
+        ],
+        "PublishedDate": "2022-09-09T15:15:00Z",
+        "LastModifiedDate": "2023-01-20T03:17:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-3821",
+        "PkgName": "systemd-libs",
+        "InstalledVersion": "239-51.0.1.el8_5.5",
+        "FixedVersion": "239-68.0.2.el8_7.1",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3821",
+        "Title": "systemd: buffer overrun in format_timespan() function",
+        "Description": "An off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-193"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 5.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 5.5
+          }
+        },
+        "References": [
+          "https://access.redhat.com/security/cve/CVE-2022-3821",
+          "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3821",
+          "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+          "https://github.com/systemd/systemd/issues/23928",
+          "https://github.com/systemd/systemd/pull/23933",
+          "https://linux.oracle.com/cve/CVE-2022-3821.html",
+          "https://linux.oracle.com/errata/ELSA-2023-0336.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/"
+        ],
+        "PublishedDate": "2022-11-08T22:15:00Z",
+        "LastModifiedDate": "2022-12-02T22:45:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-1271",
+        "PkgName": "xz-libs",
+        "InstalledVersion": "5.2.4-3.el8",
+        "FixedVersion": "5.2.4-4.el8_6",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1271",
+        "Title": "gzip: arbitrary-file-write vulnerability",
+        "Description": "An arbitrary file write vulnerability was found in GNU gzip's zgrep utility. When zgrep is applied on the attacker's chosen file name (for example, a crafted file name), this can overwrite an attacker's content to an arbitrary attacker-selected file. This flaw occurs due to insufficient validation when processing filenames with two or more newlines where selected content and the target file names are embedded in crafted multi-line file names. This flaw allows a remote, low privileged attacker to force zgrep to write arbitrary files on the system.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          }
+        },
+        "References": [
+          "https://access.redhat.com/security/cve/CVE-2022-1271",
+          "https://bugzilla.redhat.com/show_bug.cgi?id=2073310",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1271",
+          "https://git.tukaani.org/?p=xz.git;a=commit;h=69d1b3fc29677af8ade8dc15dba83f0589cb63d6",
+          "https://linux.oracle.com/cve/CVE-2022-1271.html",
+          "https://linux.oracle.com/errata/ELSA-2022-5052.html",
+          "https://lists.gnu.org/r/bug-gzip/2022-04/msg00011.html",
+          "https://security-tracker.debian.org/tracker/CVE-2022-1271",
+          "https://security.gentoo.org/glsa/202209-01",
+          "https://security.netapp.com/advisory/ntap-20220930-0006/",
+          "https://tukaani.org/xz/xzgrep-ZDI-CAN-16587.patch",
+          "https://ubuntu.com/security/notices/USN-5378-1",
+          "https://ubuntu.com/security/notices/USN-5378-2",
+          "https://ubuntu.com/security/notices/USN-5378-3",
+          "https://ubuntu.com/security/notices/USN-5378-4",
+          "https://www.openwall.com/lists/oss-security/2022/04/07/8"
+        ],
+        "PublishedDate": "2022-08-31T16:15:00Z",
+        "LastModifiedDate": "2022-10-07T14:14:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-37434",
+        "PkgName": "zlib",
+        "InstalledVersion": "1.2.11-17.el8",
+        "FixedVersion": "1.2.11-19.el8_6",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-37434",
+        "Title": "zlib: heap-based buffer over-read and overflow in inflate() in inflate.c via a large gzip header extra field",
+        "Description": "zlib through 1.2.12 has a heap-based buffer over-read or buffer overflow in inflate in inflate.c via a large gzip header extra field. NOTE: only applications that call inflateGetHeader are affected. Some common applications bundle the affected zlib source code but may be unable to call inflateGetHeader (e.g., see the nodejs/node reference).",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-787"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H",
+            "V3Score": 7
+          }
+        },
+        "References": [
+          "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "http://www.openwall.com/lists/oss-security/2022/08/05/2",
+          "http://www.openwall.com/lists/oss-security/2022/08/09/1",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-37434",
+          "https://github.com/curl/curl/issues/9271",
+          "https://github.com/ivd38/zlib_overflow",
+          "https://github.com/madler/zlib/blob/21767c654d31d2dccdde4330529775c6c5fd5389/zlib.h#L1062-L1063",
+          "https://github.com/madler/zlib/commit/eff308af425b67093bab25f80f1ae950166bece1",
+          "https://github.com/nodejs/node/blob/75b68c6e4db515f76df73af476eccf382bbcb00a/deps/zlib/inflate.c#L762-L764",
+          "https://linux.oracle.com/cve/CVE-2022-37434.html",
+          "https://linux.oracle.com/errata/ELSA-2022-9988.html",
+          "https://lists.debian.org/debian-lts-announce/2022/09/msg00012.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JWN4VE3JQR4O2SOUS5TXNLANRPMHWV4I/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NMBOJ77A7T7PQCARMDUK75TE6LLESZ3O/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PAVPQNCG3XRLCLNSQRM3KAN5ZFMVXVTY/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/X5U7OTKZSHY2I3ZFJSR2SHFHW72RKGDK/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YRQAI7H4M4RQZ2IWZUEEXECBE5D56BH2/",
+          "https://security.netapp.com/advisory/ntap-20220901-0005/",
+          "https://support.apple.com/kb/HT213488",
+          "https://support.apple.com/kb/HT213489",
+          "https://support.apple.com/kb/HT213490",
+          "https://support.apple.com/kb/HT213491",
+          "https://support.apple.com/kb/HT213493",
+          "https://support.apple.com/kb/HT213494",
+          "https://ubuntu.com/security/notices/USN-5570-1",
+          "https://ubuntu.com/security/notices/USN-5570-2",
+          "https://ubuntu.com/security/notices/USN-5573-1",
+          "https://www.debian.org/security/2022/dsa-5218"
+        ],
+        "PublishedDate": "2022-08-05T07:15:00Z",
+        "LastModifiedDate": "2023-01-09T16:44:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2018-25032",
+        "PkgName": "zlib",
+        "InstalledVersion": "1.2.11-17.el8",
+        "FixedVersion": "1.2.11-18.el8_5",
+        "Layer": {
+          "DiffID": "sha256:c8dd97366670ed499701572c321fb87ef4f9287308536563a8f1e3fd39ff2166"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-25032",
+        "Title": "zlib: A flaw found in zlib when compressing (not decompressing) certain inputs",
+        "Description": "zlib before 1.2.12 allows memory corruption when deflating (i.e., when compressing) if the input has many distant matches.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-787"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+            "V3Score": 8.2
+          }
+        },
+        "References": [
+          "http://seclists.org/fulldisclosure/2022/May/33",
+          "http://seclists.org/fulldisclosure/2022/May/35",
+          "http://seclists.org/fulldisclosure/2022/May/38",
+          "http://www.openwall.com/lists/oss-security/2022/03/25/2",
+          "http://www.openwall.com/lists/oss-security/2022/03/26/1",
+          "https://cert-portal.siemens.com/productcert/pdf/ssa-333517.pdf",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-25032",
+          "https://github.com/madler/zlib/commit/5c44459c3b28a9bd3283aaceab7c615f8020c531",
+          "https://github.com/madler/zlib/compare/v1.2.11...v1.2.12",
+          "https://github.com/madler/zlib/issues/605",
+          "https://github.com/sparklemotion/nokogiri/releases/tag/v1.13.4",
+          "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-v6gp-9mmm-c6p5",
+          "https://groups.google.com/g/ruby-security-ann/c/vX7qSjsvWis/m/TJWN4oOKBwAJ",
+          "https://linux.oracle.com/cve/CVE-2018-25032.html",
+          "https://linux.oracle.com/errata/ELSA-2022-9565.html",
+          "https://lists.debian.org/debian-lts-announce/2022/04/msg00000.html",
+          "https://lists.debian.org/debian-lts-announce/2022/05/msg00008.html",
+          "https://lists.debian.org/debian-lts-announce/2022/09/msg00023.html",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DCZFIJBJTZ7CL5QXBFKTQ22Q26VINRUF/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DF62MVMH3QUGMBDCB3DY2ERQ6EBHTADB/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JZZPTWRYQULAOL3AW7RZJNVZ2UONXCV4/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NS2D2GFPFGOJUL4WQ3DUAY7HF4VWQ77F/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VOKNP2L734AEL47NRYGVZIKEFOUBQY5Y/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XOKFMSNQ5D5WGMALBNBXU3GE442V74WU/",
+          "https://security.gentoo.org/glsa/202210-42",
+          "https://security.netapp.com/advisory/ntap-20220526-0009/",
+          "https://security.netapp.com/advisory/ntap-20220729-0004/",
+          "https://support.apple.com/kb/HT213255",
+          "https://support.apple.com/kb/HT213256",
+          "https://support.apple.com/kb/HT213257",
+          "https://ubuntu.com/security/notices/USN-5355-1",
+          "https://ubuntu.com/security/notices/USN-5355-2",
+          "https://ubuntu.com/security/notices/USN-5359-1",
+          "https://ubuntu.com/security/notices/USN-5359-2",
+          "https://ubuntu.com/security/notices/USN-5739-1",
+          "https://www.debian.org/security/2022/dsa-5111",
+          "https://www.openwall.com/lists/oss-security/2022/03/24/1",
+          "https://www.openwall.com/lists/oss-security/2022/03/28/1",
+          "https://www.openwall.com/lists/oss-security/2022/03/28/3",
+          "https://www.oracle.com/security-alerts/cpujul2022.html"
+        ],
+        "PublishedDate": "2022-03-25T09:15:00Z",
+        "LastModifiedDate": "2022-12-13T12:15:00Z"
+      }
+    ]
+  },
+  {
+    "Target": "app/libs/jackson-annotations-2.15.2.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/jackson-core-2.15.2.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/jackson-databind-2.15.2.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/jackson-datatype-jdk8-2.15.2.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/jackson-datatype-jsr310-2.15.2.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/jackson-module-parameter-names-2.15.2.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/jakarta.annotation-api-2.1.1.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/jul-to-slf4j-2.0.9.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/log4j-api-2.20.0.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/log4j-to-slf4j-2.20.0.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/logback-classic-1.4.11.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/logback-core-1.4.11.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/micrometer-commons-1.11.4.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/micrometer-observation-1.11.4.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/slf4j-api-2.0.9.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/snakeyaml-1.33.jar",
+    "Type": "jar",
+    "Vulnerabilities": [
+      {
+        "VulnerabilityID": "CVE-2022-1471",
+        "PkgName": "org.yaml:snakeyaml",
+        "InstalledVersion": "1.33",
+        "Layer": {
+          "DiffID": "sha256:a87c4ad567925cba70739780b63c09be3ac5a56acd5693000102159fd7a02cdf"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1471",
+        "Title": "SnakeYaml: Constructor Deserialization Remote Code Execution",
+        "Description": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-502"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+            "V3Score": 8.3
+          }
+        },
+        "References": [
+          "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64581479",
+          "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64634374",
+          "https://bitbucket.org/snakeyaml/snakeyaml/wiki/CVE-2022-1471",
+          "https://github.com/advisories/GHSA-mjmj-j48q-9wg2",
+          "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2",
+          "https://github.com/mbechler/marshalsec",
+          "https://linux.oracle.com/cve/CVE-2022-1471.html",
+          "https://linux.oracle.com/errata/ELSA-2022-9058-1.html",
+          "https://nvd.nist.gov/vuln/detail/CVE-2022-1471",
+          "https://snyk.io/blog/unsafe-deserialization-snakeyaml-java-cve-2022-1471/",
+          "https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true"
+        ],
+        "PublishedDate": "2022-12-01T11:15:00Z",
+        "LastModifiedDate": "2022-12-19T11:15:00Z"
+      }
+    ]
+  },
+  {
+    "Target": "app/libs/spring-aop-6.0.12.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/spring-beans-6.0.12.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/spring-boot-3.1.4.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/spring-boot-autoconfigure-3.1.4.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/spring-boot-devtools-3.1.4.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/spring-boot-starter-3.1.4.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/spring-boot-starter-json-3.1.4.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/spring-boot-starter-logging-3.1.4.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/spring-boot-starter-tomcat-3.1.4.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/spring-boot-starter-web-3.1.4.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/spring-context-6.0.12.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/spring-core-6.0.12.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/spring-expression-6.0.12.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/spring-jcl-6.0.12.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/spring-web-6.0.12.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/spring-webmvc-6.0.12.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/tomcat-embed-core-10.1.13.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/tomcat-embed-el-10.1.13.jar",
+    "Type": "jar"
+  },
+  {
+    "Target": "app/libs/tomcat-embed-websocket-10.1.13.jar",
+    "Type": "jar"
+  }
+]

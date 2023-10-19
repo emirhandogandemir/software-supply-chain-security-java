@@ -14,7 +14,7 @@ This repo contains articles, videos, and resources on software supply chain secu
 🎥 Videos
 | Başlık       | Yükleyen    | Yayın Tarihi | İzlenme Sayısı |
 |--------------|-------------|--------------|----------------|
-| Video 1      | Kanal 1     | 01.01.2023   | 1000+          |
+| [Securing the Supply Chain for Your Java Applications By Thomas Vitale](https://youtu.be/ftPFxK8JPNM?si=SZRjqNARzj1GJaam)    | [Devoxx](https://youtube.com/@DevoxxForever?si=L_YwGLhn7japl-bb)    | 06.10.2023   | 500+          |
 | Video 2      | Kanal 2     | 02.01.2023   | 500+           |
 | Video 3      | Kanal 3     | 03.01.2023   | 2000+          |
 | Video 4      | Kanal 4     | 04.01.2023   | 300+           |
@@ -42,9 +42,53 @@ This repo contains articles, videos, and resources on software supply chain secu
 
 --------------------------------------
 ## Dependency Track 
-installed with docker-compose.yaml 
-![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/614d456e-d621-49d3-8f05-27ccb61da294)
-![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/97c55c1f-f653-41b7-8c71-b6a8f9e29596)
-![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/be98c91b-87f9-415d-8dfa-aad58edebd02)
+
+`Installed with docker-compose.yaml`
+
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/4db8ff3b-6c49-499b-b705-bb69a9e1af6c)
+
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/a77ad6f6-4445-4097-8778-2852e1e8dae6)
+
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/e387a3f0-d3cb-4117-b37c-a2a7e1594322)
+
+## Sonarqube
+
+- `docker pull sonarqube:communition`
+- `docker run -d --name sonarqube -p 9000:9000 -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -e SONAR_JAVA_OPTS="-Xmx4g -Xms512m -XX:+HeapDumpOnOutOfMemoryError" sonarqube:community`
+
+We can use below command for project SCA 
+
+`mvn clean package sonar:sonar -Dsonar.projecKey=secure-devOps -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_8d5781d430cef6f2ba2c08e691ef6b01bd0c8f28 -Dsonar.exclusions=**/*.java` this login token will be changing because of this sonarqube does not persistent
+
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/a2576664-7c8f-45f6-8cc7-734446a19e15)
+
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/11d5e107-f421-460c-a88d-912dadcead96)
+
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/de7bba07-253e-4eb1-8792-4b1b19762d19)
+
+
+## Buildpacks
+We will creating a image with buildpacks
+[Buildpacks](https://buildpacks.io/)
+
+
+## Jıb-Maven-Plugin
+
+- [How to use jib with our java project](https://github.com/GoogleContainerTools/jib/blob/master/jib-maven-plugin/README.md)
+- `mvn clean install -P create-image`
+
+## Trivy
+
+- [How to install trivy](https://aquasecurity.github.io/trivy/v0.18.3/installation/)
+- `trivy image dogandemir51/secure:0.0.1`
+- `trivy image --format json --output trivy-scanning.json dogandemir51/secure:0.0.1`
+
+## Cosign 
+
+
+
+
+## Kyverno
+
 
 
