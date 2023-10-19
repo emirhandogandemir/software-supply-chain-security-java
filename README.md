@@ -73,9 +73,15 @@ We will creating a image with buildpacks
 
 
 ## Jıb-Maven-Plugin
-How to use jib with our java project
-[jib-readme](https://github.com/GoogleContainerTools/jib/blob/master/jib-maven-plugin/README.md)
+
+- [How to use jib with our java project](https://github.com/GoogleContainerTools/jib/blob/master/jib-maven-plugin/README.md)
 - `mvn clean install -P create-image`
+
+## Trivy
+
+- [How to install trivy](https://aquasecurity.github.io/trivy/v0.18.3/installation/)
+- `trivy image dogandemir51/secure:0.0.1`
+- `trivy image --format json --output trivy-scanning.json dogandemir51/secure:0.0.1`
 
 ## Cosign 
 
