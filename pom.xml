@@ -56,22 +56,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
             <plugin>
-                <groupId>com.google.cloud.tools</groupId>
-                <artifactId>jib-maven-plugin</artifactId>
-                <version>2.5.2</version>
-                <configuration>
-                    <from>
-                        <image>openjdk:17</image>
-                    </from>
-                    <container>
-                        <ports>
-                            <port>8080</port>
-                        </ports>
-                        <format>OCI</format>
-                    </container>
-                </configuration>
-            </plugin>
-            <plugin>
                 <groupId>org.cyclonedx</groupId>
                 <artifactId>cyclonedx-maven-plugin</artifactId>
                 <version>2.7.9</version>
@@ -109,7 +93,7 @@
     </build>
     <profiles>
         <profile>
-            <id>create-image</id>
+            <id>create-image-openjdk</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
@@ -126,6 +110,84 @@
                             <container>
                                 <ports>
                                     <port>8080</port>
+                                </ports>
+                                <format>OCI</format>
+                            </container>
+                            <to>
+                                <image>docker.io/${docker.username}/${project.artifactId}:${project.version}</image>
+                            </to>
+                            <allowInsecureRegistries>true</allowInsecureRegistries>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>build</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+
+        </profile>
+        <profile>
+            <id>create-image-openjdk-slim</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.google.cloud.tools</groupId>
+                        <artifactId>jib-maven-plugin</artifactId>
+                        <version>3.2.1</version>
+                        <configuration>
+                            <from>
+                               <image>openjdk:17.0.2-jdk-slim</image>
+                            </from>
+                            <container>
+                                <ports>
+                                    <port>8081</port>
+                                </ports>
+                                <format>OCI</format>
+                            </container>
+                            <to>
+                                <image>docker.io/${docker.username}/${project.artifactId}:${project.version}</image>
+                            </to>
+                            <allowInsecureRegistries>true</allowInsecureRegistries>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>build</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+
+        </profile>
+        <profile>
+            <id>create-image-openjdk-jre</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.google.cloud.tools</groupId>
+                        <artifactId>jib-maven-plugin</artifactId>
+                        <version>3.2.1</version>
+                        <configuration>
+                            <from>
+                                <image>registry.access.redhat.com/ubi8/openjdk-17-runtime</image>
+                            </from>
+                            <container>
+                                <ports>
+                                    <port>8081</port>
                                 </ports>
                                 <format>OCI</format>
                             </container>
