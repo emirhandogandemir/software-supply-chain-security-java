@@ -68,6 +68,7 @@ We can use below command for project SCA
 
 
 ## Buildpacks
+
 We will creating a image with buildpacks
 [Buildpacks](https://buildpacks.io/)
 
@@ -87,17 +88,23 @@ We will creating a image with buildpacks
 - `trivy image --format json --output trivy-scanning.json dogandemir51/secure:0.0.1`
 
 ## Helm
+
 - [helm](https://helm.sh/)
 - `helm create securechart`
 - You must change values.yaml for your application
 - `helm install secure ./securechart`
+
+## Kyverno
+
+- [Kyverno](https://kyverno.io/docs/introduction/#quick-start)
+- [Installation](https://kyverno.io/docs/installation/)
+- [ExamplePolicy](https://kyverno.io/policies/best-practices/disallow-latest-tag/disallow-latest-tag/)
 
 ## Cosign 
 
 
 
 
-## Kyverno
 
 
 
