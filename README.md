@@ -105,8 +105,10 @@ We will creating a image with buildpacks
 - [ExamplePolicy](https://kyverno.io/policies/best-practices/disallow-latest-tag/disallow-latest-tag/)
 
 ## Cosign 
-
-
+- [Installation](https://docs.sigstore.dev/system_config/installation/)
+- `cosign generate-key-pair`
+- `cosign sign --key cosign.key dogandemir51/secure:0.0.1`
+- `cosign verify --key cosign.pub dogandemir51/secure:0.0.1`
 
 
 
