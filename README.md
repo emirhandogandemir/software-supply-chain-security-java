@@ -4,8 +4,8 @@ This repo contains articles, videos, and resources on software supply chain secu
 🔗 GitHub Links
 | Proje Adı    | Açıklama    | GitHub Linki                           |
 |--------------|-------------|----------------------------------------|
-| Awesome software supply chain security      | A compilation of resources in the software supply chain security domain, with emphasis on open source | [awesome-software-supply-chain-security](https://github.com/bureado/awesome-software-supply-chain-security)  |
-| Proje 2      | Açıklama 2  | [GitHub Proje 2](https://github.com/)  |
+| Awesome software supply chain security      | A compilation of resources in the software supply chain security domain, with emphasis on open source | [Github](https://github.com/bureado/awesome-software-supply-chain-security)  |
+| ssc-reading-list      | ssc-reading-list  | [GitHub](https://github.com/chainguard-dev/ssc-reading-list)  |
 | Proje 3      | Açıklama 3  | [GitHub Proje 3](https://github.com/)  |
 | Proje 4      | Açıklama 4  | [GitHub Proje 4](https://github.com/)  |
 
@@ -15,7 +15,7 @@ This repo contains articles, videos, and resources on software supply chain secu
 | Başlık       | Yükleyen    | Yayın Tarihi | İzlenme Sayısı |
 |--------------|-------------|--------------|----------------|
 | [Securing the Supply Chain for Your Java Applications By Thomas Vitale](https://youtu.be/ftPFxK8JPNM?si=SZRjqNARzj1GJaam)    | [Devoxx](https://youtube.com/@DevoxxForever?si=L_YwGLhn7japl-bb)    | 06.10.2023   | 500+          |
-| Video 2      | Kanal 2     | 02.01.2023   | 500+           |
+| [Signing And Verifying Container Images With Sigstore Cosign And Kyverno](https://www.youtube.com/watch?v=HLb1Q086u6M&t=1s)      | DevOps Toolkit     | 10.10.2022   | 5000+           |
 | Video 3      | Kanal 3     | 03.01.2023   | 2000+          |
 | Video 4      | Kanal 4     | 04.01.2023   | 300+           |
 
@@ -27,17 +27,17 @@ This repo contains articles, videos, and resources on software supply chain secu
 | [Supply Chain Security](https://www.aquasec.com/cloud-native-academy/supply-chain-security/supply-chain-security-mitigating-the-supply-chain-threat/)       | aqua     | None   | ⭐⭐⭐⭐⭐    |
 | [How to create SBOMs in Java with Maven and Gradle](https://medium.com/@snyksec/how-to-create-sboms-in-java-with-maven-and-gradle-2abb1269baa6)       | snyk     | 28.11.2022   | ⭐⭐⭐⭐       |
 | [SBOM Quick Start](https://help.sonatype.com/iqserver/quickstart-guides/software-bill-of-materials-%28sbom%29-quick-start?selectedPageVersions=6&selectedPageVersions=7)       | Sonatype     | None   | ⭐⭐⭐⭐     |
-| Yazı 4       | Yazar 4     | 04.01.2023   | ⭐⭐⭐           |
+| [Sign and Verify Container Images with Cosign, and Kyverno: A Complete Guide](https://medium.com/@seifeddinerajhi/sign-and-verify-container-images-with-cosign-and-kyverno-a-complete-guide-b32b1f6e6264)       | Seifeddine Rajhi     | .09.2023   | ⭐⭐⭐⭐⭐ |
 
 --------------------------------------------------------------------------------
 
 👤 LinkedIn Profiles to Follow
 | Name           | Title               | Profile Link                        |
 |----------------|----------------------|------------------------------------|
-| Person 1       | Position 1          | [LinkedIn Profile 1](https://www.linkedin.com/) |
-| Person 2       | Position 2          | [LinkedIn Profile 2](https://www.linkedin.com/) |
-| Person 3       | Position 3          | [LinkedIn Profile 3](https://www.linkedin.com/) |
-| Person 4       | Position 4          | [LinkedIn Profile 4](https://www.linkedin.com/) |
+| Batuhan Apaydın       | Senior Platform Engineer          | [LinkedIn Profile](https://www.linkedin.com/in/bthnapydin/) |
+| Furkan Türkal       | Platform Engineer          | [LinkedIn Profile](https://www.linkedin.com/in/furkanturkal/) |
+| Dan Lorenc       | Ceo          | [LinkedIn Profile](https://www.linkedin.com/in/danlorenc/) |
+| Saim Safder      | DevOps Tech Lead         | [LinkedIn Profile](https://www.linkedin.com/in/saim-safder/) |
 
 
 --------------------------------------
