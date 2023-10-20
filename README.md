@@ -79,6 +79,8 @@ We will creating a image with buildpacks
 - `mvn clean install -P create-image-openjdk` => max size
 - `mvn clean install -P create-image-openjdk-slim`
 - `mvn clean install -P create-image-openjdk-jre` => min size
+- ![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/4baf45ae-cc84-4835-9a52-44ab795d5d84)
+
 ----------------------------------------------------------------------------------------
 
 ### [After this step we will be working on killercoda](https://killercoda.com/kubernetes/scenario/playground)
