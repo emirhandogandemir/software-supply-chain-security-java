@@ -83,6 +83,12 @@ We will creating a image with buildpacks
 - `trivy image dogandemir51/secure:0.0.1`
 - `trivy image --format json --output trivy-scanning.json dogandemir51/secure:0.0.1`
 
+## Helm
+- [helm](https://helm.sh/)
+- `helm create securechart`
+- You must change values.yaml for your application
+- `helm install secure ./securechart`
+
 ## Cosign 
 
 
