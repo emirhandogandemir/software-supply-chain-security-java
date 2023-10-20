@@ -101,7 +101,8 @@ We will creating a image with buildpacks
 - [ExamplePolicy](https://kyverno.io/policies/best-practices/disallow-latest-tag/disallow-latest-tag/)
 
 ## Cosign 
-
+@developer-guy
+@Dentrax
 
 
 
