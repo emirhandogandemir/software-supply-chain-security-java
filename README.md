@@ -109,6 +109,7 @@ We will creating a image with buildpacks
 - `cosign generate-key-pair`
 - `cosign sign --key cosign.key dogandemir51/secure:0.0.1`
 - `cosign verify --key cosign.pub dogandemir51/secure:0.0.1`
+![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/bb0fa683-fd1b-4faf-9410-e83050749db2)
 
 
 
