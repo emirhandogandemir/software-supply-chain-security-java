@@ -76,6 +76,9 @@ We will creating a image with buildpacks
 
 - [How to use jib with our java project](https://github.com/GoogleContainerTools/jib/blob/master/jib-maven-plugin/README.md)
 - `mvn clean install -P create-image`
+----------------------------------------------------------------------------------------
+
+### [After this step we will be working on killercoda](https://killercoda.com/kubernetes/scenario/playground)
 
 ## Trivy
 
