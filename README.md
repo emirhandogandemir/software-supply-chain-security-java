@@ -58,7 +58,13 @@ This repo contains articles, videos, and resources on software supply chain secu
 
 We can use below command for project SCA 
 
-`mvn clean package sonar:sonar -Dsonar.projecKey=secure-devOps -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_8d5781d430cef6f2ba2c08e691ef6b01bd0c8f28 -Dsonar.exclusions=**/*.java` this login token will be changing because of this sonarqube does not persistent
+- `You must install sonar-scanner your local desktop`
+  
+ ![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/af49f3a9-aaf1-45c7-aa10-e098a6ce3751)
+
+- How to create a token => My Account=> Security=> Generate Tokens 
+
+- `mvn clean package sonar:sonar -Dsonar.projecKey=secure-devOps -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_8d5781d430cef6f2ba2c08e691ef6b01bd0c8f28 -Dsonar.exclusions=**/*.java` this login token will be changing because of this sonarqube does not persistent
 
 ![image](https://github.com/emirhandogandemir/software-supply-chain-security-java/assets/74687192/a2576664-7c8f-45f6-8cc7-734446a19e15)
 
